@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "levelName": "silver",
+      "price": "$150",
+      "nameOnWebsite": "true",
+      "nameInLobby": "yes",
+      "nameInPlaybill": "yes",
+      "freeTickets": "0",
+      "buttonLink": "https://buy.stripe.com/test_cN200b2S46V88G4288"
+    },
+    {
+      "levelName": "gold",
+      "price": "$250",
+      "nameOnWebsite": "true",
+      "nameInLobby": "yes",
+      "nameInPlaybill": "yes",
+      "ad": "quarter",
+      "adSize": "1020px by 1548px",
+      "adSizeIn": "2.125in by 3.25in",
+      "adExampleImg": "/images/quarter-page-ad-example.svg",
+      "adDimension": "vertical",
+      "singlePrice": "$50",
+      "freeTickets": "2",
+      "adImage": "/images/quarter-icon.svg",
+      "buttonLink": "https://buy.stripe.com/test_3cseV5gIUdjw4pOaEF"
+    },
+    {
+      "levelName": "platinum",
+      "price": "$500",
+      "nameOnWebsite": "true",
+      "nameInLobby": "yes",
+      "nameInPlaybill": "yes",
+      "ad": "half",
+      "adSize": "2120px by 11548px",
+      "adSizeIn": "4.5in by 3.25in",
+      "adExampleImg": "/images/half-page-ad-example.svg",
+      "adDimension": "horizontal",
+      "singlePrice": "$100",
+      "freeTickets": "4",
+      "adImage": "/images/half-icon.svg",
+      "buttonLink": "https://buy.stripe.com/test_3cseV5gIUdjw4pOaEF"
+    },
+    {
+      "levelName": "diamond",
+      "price": "$1000",
+      "nameOnWebsite": "true",
+      "nameInLobby": "yes",
+      "nameInPlaybill": "yes",
+      "ad": "full",
+      "adSize": "2120px by 3176px",
+      "adSizeIn": "4.5in by 6.625in",
+      "adExampleImg": "/images/full-page-ad-example.svg",
+      "adDimension": "full page horizontal",
+      "singlePrice": "$150",
+      "freeTickets": "10",
+      "adImage": "/images/full-icon.svg",
+      "buttonLink": "https://buy.stripe.com/test_3cs14f1O0bbo2hGdQT"
+    }
+  ]
+}

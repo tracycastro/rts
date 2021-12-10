@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "text": "Sponsorship",
+      "url": "/sponsorship"
+    },
+    {
+      "text": "Playbill Ads",
+      "url": "/one-time-ads"
+    },
+    {
+      "text": "Submit Headshot & Bio",
+      "url": "https://docs.google.com/forms/d/e/1FAIpQLSehYtsz0YA8FcokbkZktpsTomD9pr-kKk_jEfe2mCboFnFECQ/viewform"
+    },
+    {
+      "text": "Tickets",
+      "url": "https://mccallum.ludus.com/index.php"
+    }
+  ]
+}

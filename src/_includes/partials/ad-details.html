@@ -1,0 +1,25 @@
+<div class="rts-container">
+  <h2 class="rts-levels-heading">Ad Specifications</h2>
+  <p style="text-align: center">
+    Looking ad ideas and inspiration? Check out a copy of a recent playbill
+    <a href="/">here</a>!
+  </p>
+  <div class="ad-spec-container">
+    {% for item in levels.items %} {% if item.adSize %}
+    <div class="ad-image">
+      <img src="{{ item.adExampleImg }}" alt="Example of ad" width="150" />
+    </div>
+    <div class="ad-specs">
+      <p class="rts-ad-text">{{item.ad}} page</p>
+      <p>
+        The {{ item.ad }} page ads are
+        <span class="emphasis">{{ item.adDimension }} </span>{{ item.adSize }}
+        (approximately {{ item.adSizeIn }}).
+      </p>
+      <button class="one-time-ad-button">buy now {{ item.singlePrice }}</button>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+  <!--.ad-spec-container-->
+</div>
+<!--.rts-container-->

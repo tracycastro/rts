@@ -1,0 +1,69 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content%}
+<div class="rts-container">
+  <div class="rts-wrapper form-page">
+    <div class="contact-info intro">
+      <h2 class="intro__heading">Contact</h2>
+      <p>
+        Hello! We'd love to hear from you! Use this contact form to send us a
+        note with any questions or comments for RTS! Or you can email us at
+        <a href="mailto:macRTSpresident@gmail.com">macRTSpresident@gmail.com</a
+        >.
+      </p>
+    </div>
+    <div class="form-container">
+      <form action="/my-handling-form-page" method="post">
+        <div class="form-section">
+          <label for="name">Name *</label>
+          <input
+            required
+            type="text"
+            id="name"
+            name="name"
+            aria-describedby="name-validation"
+            autocomplete="name"
+          /><span
+            id="name-validation"
+            aria-live="assertive"
+            class="validation-message"
+          ></span>
+        </div>
+        <div class="form-section">
+          <label for="email">E-mail *</label>
+          <input
+            required
+            type="email"
+            id="email"
+            name="email"
+            aria-describedby="email-validation"
+            autocomplete="email"
+          />
+          <span
+            id="email-validation"
+            aria-live="assertive"
+            class="validation-message"
+          ></span>
+        </div>
+        <div class="form-section">
+          <label for="msg">Message *</label>
+          <textarea
+            required
+            id="msg"
+            name="message"
+            aria-describedby="message-validation"
+          ></textarea>
+          <span
+            id="message-validation"
+            aria-live="assertive"
+            class="validation-message"
+          ></span>
+        </div>
+        <div class="form-section button-container">
+          <button>Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

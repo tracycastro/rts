@@ -1,0 +1,573 @@
+:root {
+  --blue: #051958;
+  --rhythm: 25px;
+}
+
+body,
+p,
+li,
+dt,
+dd,
+dl,
+address,
+label,
+pre,
+code {
+  font-size: 15px;
+  color: var(--blue);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+}
+p {
+  font-family: "Hind", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  font-weight: 300;
+}
+a {
+  color: var(--blue);
+  transition: color 0.15s ease-out;
+}
+a:hover {
+  opacity: 0.7;
+}
+h2 {
+  font-size: 2.76rem;
+}
+h3 {
+  font-family: "Hind", sans-serif;
+  font-size: 1.3rem;
+  padding-block-start: 2rem;
+}
+.site-head,
+.footer-wrapper {
+  padding: 1rem 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--blue);
+  box-shadow: 0 4px 10px -10px rgb(0 0 0 / 60%);
+}
+
+.site-head svg {
+  display: block;
+  margin: 0.2em auto;
+}
+.header-wrapper,
+.footer-wrapper {
+  max-width: 90%;
+  padding: 0 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.site-head__inner,
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__inner {
+  flex-direction: column;
+}
+.site-head__inner a,
+.site-footer-nav a {
+  text-decoration: none;
+  text-transform: none;
+}
+.site-head__brand {
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.site-head__nav {
+  line-height: 1;
+  font-weight: 800;
+  margin-top: 1rem;
+}
+
+.nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.nav__list > * {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-inline-start: 1.33rem;
+  color: var(--blue);
+}
+
+.nav a {
+  display: block;
+  text-transform: uppercase;
+}
+
+.nav a,
+nav a:visited,
+a.site-head__brand,
+a.site-head__brand:visited {
+  color: var(--blue);
+  transition: color 0.15s ease-out;
+}
+
+.nav a:hover {
+  opacity: 0.7;
+}
+/* @media (max-width: 675px) {
+    .site-head__inner {
+        align-items: center;
+    }
+} */
+.bottom-nav {
+  display: flex;
+  gap: 2rem;
+  padding-block-start: 3rem;
+}
+.bottom-nav > li > a {
+  color: white;
+}
+
+@media (min-width: 400px) and (max-width: 1169px) {
+  .nav__list {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .site-head__inner {
+    justify-content: center;
+    display: block;
+    text-align: center;
+  }
+}
+
+/* Main Content */
+
+main {
+  padding: 2rem;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.wrapper {
+  /* padding: 4rem 2rem; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro {
+  text-align: center;
+}
+
+.intro p {
+  text-align: left;
+}
+
+button,
+.button {
+  display: inline-block;
+  background-color: var(--blue);
+  color: white;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-block-start: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--blue);
+  transition: 0.1s background-color linear, 0.1s color linear;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+button:hover,
+.button:hover {
+  background-color: white;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.rts-container {
+  margin: 0 auto;
+}
+
+/* display: flex;
+    flex-direction: column; */
+/* align-items: stretch; */
+/* justify-content: center; */
+
+.rts-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  padding-block: 4rem;
+}
+.rts-img {
+  flex: 0 0 300px;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.ad-spec-container {
+  display: grid;
+  grid-template-columns: 150px auto;
+  justify-content: center;
+  column-gap: 2rem;
+  margin-top: 2rem;
+  align-items: center;
+  row-gap: 4rem;
+  padding-bottom: 3rem;
+}
+
+.emphasis {
+  font-weight: bold;
+}
+
+@media (min-width: 62em) {
+  .wrapper {
+    max-width: 70vw;
+    padding: 4rem 4rem 1rem;
+  }
+  .rts-wrapper {
+    flex-direction: row;
+    gap: 2rem;
+    padding: 4rem 2rem;
+  }
+  .rts-wrapper:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  main {
+    padding: 1rem;
+  }
+  .rts-container {
+    padding-inline: 2em;
+    max-width: 80vw;
+  }
+  .date-container {
+    max-width: 50vw;
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+
+  .show-and-date {
+    flex: 1 1 25%;
+  }
+  .intro {
+    max-width: 50vw;
+    margin: 0 auto;
+  }
+}
+.rts-levels-heading {
+  text-align: center;
+  padding-top: 1em;
+}
+
+footer {
+  background-color: var(--blue);
+}
+
+footer > * p {
+  color: white;
+  font-size: 0.9rem;
+}
+
+footer svg {
+  filter: brightness(0) invert(1);
+  margin: 0 auto;
+}
+
+.footer__inner {
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2.5rem;
+}
+
+/* sponsorship level grid  */
+
+.sponsor__list {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, auto);
+  gap: 2em 5em;
+  justify-items: stretch;
+  grid-template-areas:
+    "silver-desc gold-desc plat-desc diamond-desc"
+    "silver-web gold-web plat-web diamond-web"
+    "silver-lobby gold-lobby plat-lobby diamond-lobby"
+    "silver-pb gold-pb plat-pb diamond-pb"
+    "silver-ad gold-ad plat-ad diamond-ad"
+    "silver-tix gold-tix plat-tix diamond-tix"
+    "silver-donate gold-donate plat-donate diamond-donate";
+}
+.freeTickets,
+.nameInPlaybill,
+.nameOnWebsite,
+.nameInLobby,
+.ad {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+}
+.level-desc.silver {
+  grid-area: silver-desc;
+}
+
+/* define grid areas */
+/*desc*/
+.level-desc.gold {
+  grid-area: gold-desc;
+}
+.level-desc.platinum {
+  grid-area: plat-desc;
+}
+.level-desc.diamond {
+  grid-area: diamond-desc;
+}
+/*website*/
+.nameOnWebsite.silver {
+  grid-area: silver-web;
+}
+.nameOnWebsite.gold {
+  grid-area: gold-web;
+}
+.nameOnWebsite.platinum {
+  grid-area: plat-web;
+}
+.nameOnWebsite.diamond {
+  grid-area: diamond-web;
+}
+/*lobby*/
+
+.nameInLobby.silver {
+  grid-area: silver-lobby;
+}
+.nameInLobby.gold {
+  grid-area: gold-lobby;
+}
+.nameInLobby.platinum {
+  grid-area: plat-lobby;
+}
+.nameInLobby.diamond {
+  grid-area: diamond-lobby;
+}
+/*playbill*/
+.nameInPlaybill.silver {
+  grid-area: silver-pb;
+}
+.nameInPlaybill.gold {
+  grid-area: gold-pb;
+}
+.nameInPlaybill.platinum {
+  grid-area: plat-pb;
+}
+.nameInPlaybill.diamond {
+  grid-area: diamond-pb;
+}
+/*ad*/
+.ad.silver {
+  grid-area: silver-ad;
+}
+.ad.gold {
+  grid-area: gold-ad;
+}
+.ad.platinum {
+  grid-area: plat-ad;
+}
+.ad.diamond {
+  grid-area: diamond-ad;
+}
+/*tickets */
+
+.freeTickets.silver {
+  grid-area: silver-tix;
+}
+.freeTickets.gold {
+  grid-area: gold-tix;
+}
+.freeTickets.platinum {
+  grid-area: plat-tix;
+}
+.freeTickets.diamond {
+  grid-area: diamond-tix;
+}
+/*donate*/
+.levelButton.silver {
+  grid-area: silver-donate;
+}
+.levelButton.gold {
+  grid-area: gold-donate;
+}
+.levelButton.platinum {
+  grid-area: plat-donate;
+}
+.levelButton.diamond {
+  grid-area: diamond-donate;
+}
+/*style sponsor list typography*/
+
+p.rts__summary {
+  padding-top: 1rem;
+}
+
+.sponsor__list p {
+  font-family: "Hind", sans-serif;
+  font-size: 1rem;
+  line-height: 1.2;
+  text-align: center;
+  font-weight: 300;
+}
+.sponsor__list h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-family: "Hind", sans-serif;
+  padding: 0;
+  align-self: baseline;
+  font-weight: 500;
+}
+p.rts-display-text {
+  font-family: "Playfair Display", serif;
+  font-size: 3rem;
+  font-weight: 900;
+  padding-bottom: 0.5rem;
+  line-height: 1;
+}
+p.rts-ad-text {
+  text-transform: capitalize;
+  font-weight: 800;
+}
+p.item-price {
+  /* background-color: var(--blue);
+  color: white; */
+  font-size: 1.2rem;
+  /* padding-top: 0.5rem; */
+}
+
+.nameInLobby img {
+  padding-bottom: 0.5rem;
+}
+
+.levelButton {
+  text-align: center;
+}
+.levelButton p {
+  font-size: 0.8rem;
+}
+.levelButton a {
+  text-align: center;
+  margin-block: 0 1em;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 1000px) {
+  .sponsor__list {
+    max-width: 500px;
+    column-gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(12, auto);
+    row-gap: 3rem;
+    grid-template-areas:
+      "silver-desc gold-desc"
+      "silver-web gold-web"
+      "silver-lobby gold-lobby"
+      "silver-pb gold-pb"
+      "silver-ad gold-ad"
+      "silver-tix gold-tix"
+      "silver-donate gold-donate"
+      " plat-desc diamond-desc"
+      " plat-web diamond-web"
+      "plat-lobby diamond-lobby"
+      "plat-pb diamond-pb"
+      "plat-ad diamond-ad"
+      "plat-tix diamond-tix"
+      "plat-donate diamond-donate";
+  }
+  .levelButton {
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 2rem;
+  }
+}
+
+.faded {
+  opacity: 50%;
+  cursor: not-allowed;
+}
+
+/* form styling */
+
+.rts-wrapper.form-page {
+  flex-direction: column;
+  /* align-items: stretch; */
+}
+
+.form-section {
+  font-family: "Hind", sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.75;
+  font-weight: 300;
+  padding-block: 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+
+input,
+textarea {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid var(--blue);
+  border-radius: 0.1rem;
+  color: var(--blue);
+}
+textarea {
+  min-height: 30vh;
+}
+
+.validation-message {
+  display: block;
+  padding-top: 0.4em;
+  color: red;
+  font-size: 0.8rem;
+}
+
+.contact-info > h2
+/* .contact-info > p { */ {
+  text-align: center;
+}
+
+.form-container {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.form-section.button-container {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .form-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
