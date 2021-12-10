@@ -12,7 +12,12 @@ content%}
       </p>
     </div>
     <div class="form-container">
-      <form action="/my-handling-form-page" method="post">
+      <form
+        name="contact"
+        action="/contact-success"
+        method="post"
+        data-netlify="true"
+      >
         <div class="form-section">
           <label for="name">Name *</label>
           <input
