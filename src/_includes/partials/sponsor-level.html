@@ -1,0 +1,124 @@
+<div class="rts-container">
+  <h2 class="rts-levels-heading">Become a Business Sponsor</h2>
+  <div class="rts-wrapper">
+    <div class="sponsor__list">
+      {% for item in corporatesponsor.items %}
+      <div class="level-desc {{item.levelName}}">
+        <h3>{{ item.levelName }} Sponsor</h3>
+        <p class="item-price">{{ item.price }}</p>
+      </div>
+      <div class="backOfPlaybill {{ item.levelName }}">
+        {% if item.backOfPlaybill %}
+        <img
+          src="/images/playbill-icon.svg"
+          alt="playbill icon"
+          width="50"
+          height="auto"
+        />
+        <p>Color Logo on Back of Playbill for All Shows</p>
+        {% endif %}
+      </div>
+      <div class="adInPlaybill {{ item.levelName }}">
+        {% if item.adInPlaybill %}
+        <img src="{{ item.adIcon }}" alt="ad icon" width="55" />
+        <strong style="text-transform: capitalize"
+          >{{ item.adInPlaybill }}</strong
+        >
+        <p>Black & White Ad in Playbill for All Shows</p>
+        {% endif %}
+      </div>
+      <div class="lobbyDisplay {{ item.levelName }}">
+        {% if item.lobbyDisplay %}
+        <img
+          src="/images/poster-icon.svg"
+          alt="poster icon"
+          width="45"
+          height="auto"
+        />
+        <p>Your logo Displayed in the Lobby for All Shows</p>
+        {% endif %}
+      </div>
+      <div class="linkOnHomePage {{ item.levelName }}">
+        {% if item.linkOnHomePage %}
+        <img
+          src="/images/website-icon.svg"
+          alt="website icon"
+          width="35"
+          height="auto"
+        />
+        <p>Logo with Link on macrts.org Home Page</p>
+        {% endif %}
+      </div>
+      <div class="profileOnWebsite {{ item.levelName }}">
+        {% if item.profileOnWebsite %}
+        <img
+          src="/images/profile-icon.svg"
+          alt="profile icon"
+          width="50"
+          height="auto"
+        />
+        <p>Profile with Link on macrts.org Sponsor Page</p>
+        {% endif %}
+      </div>
+      <div class="logoOnPostProdEmail {{ item.levelName }}">
+        {% if item.logoOnPostProdEmail %}
+        <img
+          src="/images/email-icon.svg"
+          alt="email icon"
+          width="40"
+          height="auto"
+        />
+        <p>Logo on MacTheatre Post-Production Email for All Show</p>
+        {% endif %}
+      </div>
+      <div class="logoOnPromoEmail {{ item.levelName }}">
+        {% if item.logoOnPromoEmail == "true" %}
+        <img
+          src="/images/shoutout-icon.svg"
+          alt="megaphone icon"
+          width="60"
+          height="auto"
+        />
+        <p>Logo on MacTheatre Promotional Emails for All Shows</p>
+        {% endif %}
+      </div>
+      <div class="socialShoutout {{ item.levelName }}">
+        {% if item.socialShoutout == "true" %}
+        <img
+          src="/images/social-icon.svg"
+          alt="social media icon"
+          width="50"
+          height="auto"
+        />
+        <p>Group Social Shout-Outs</p>
+        {% endif %}
+      </div>
+      <div class="freeTickets {{ item.levelName }}">
+        {% if item.freeTickets > 0 %}
+        <!-- <img src="/images/ticket-icon.svg" alt="ticket icon" width="50" /> -->
+        <p class="rts-display-text">{{item.freeTickets}}</p>
+        <p>Total free tickets for the Season</p>
+        {% else %}
+        <p></p>
+        {% endif %}
+      </div>
+      <div class="employeeTix {{ item.levelName }}">
+        {% if item.employeeTix %}
+        <img src="/images/ticket-icon.svg" alt="ticket icon" width="45" />
+        <strong>Employee/Client Tickets:</strong>
+        <p>{{item.employeeTix}}</p>
+        {% else %}
+        <p></p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<div class="rts-container">
+  <div class="levelButton {{ item.levelName }}">
+    <a class="donate button" href="/sponsor-checkout/"
+      >Purchase Sponsorship&nbsp;→</a
+    >
+  </div>
+</div>

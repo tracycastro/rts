@@ -2,26 +2,43 @@
   <div class="header-wrapper">
     <div class="site-head__inner">
       <a href="/" aria-label="{{ site.name }} - home" class="site-head__brand">
-        {% include "partials/brand.svg" %} Royale Theatre Society
+        {% include "partials/brand.svg" %} <span>Royale Theatre Society</span>
       </a>
-      <nav class="nav site-head__nav" aria-label="Primary">
-        <ul class="nav__list">
-          {% for item in navigation.items %}
-          <li>
-            <a
-              href="{{ item.url }}"
-              {{
-              helpers.getLinkActiveState(item.url,
-              page.url)
-              |
-              safe
-              }}
-              >{{ item.text }}</a
-            >
-          </li>
-          {% endfor %}
-        </ul>
-      </nav>
+      <ul class="social-nav">
+      {% include "partials/social-menu.html" %}
+        <li class="social-nav-item">
+         <a class="social-nav__button" href="/contact/">contact</a>
+        </li>
+        <!-- <li>
+          <a class="social-nav__button" href="https://givebutter.com/theatrekid" target="_blank">donate</a>
+         </li> -->
+      </ul>
     </div>
   </div>
 </header>
+<nav class="nav site-head__nav" aria-label="Primary">
+  <ul class="nav__list">
+    {% for item in navigation.items %} {% if item.subitems.length > 0 %}
+    <li class="dropdown">
+      <!-- aria-expanded needs managed with Javascript -->
+      <button
+        type="button"
+        class="dropdown__title"
+        aria-expanded="false"
+        aria-controls="primary-dropdown"
+        id="{{ item.id }}"
+      >
+        {{ item.text }}
+      </button>
+      <ul class="dropdown__menu" aria-labelledby="{{ item.id }}">
+        {% for subitem in item.subitems %}
+        <li><a href="{{ subitem.url }}">{{ subitem.text }}</a></li>
+        {% endfor %}
+      </ul>
+      {% else %}
+      <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

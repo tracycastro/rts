@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "level": "Diamond",
+      "levelItems": [
+        {
+          "sponsor": "Jason Heffron / Juice",
+          "url": "https://www.jasonheffron.com/",
+          "logo": "../images/sponsor-logos/JuiceRealEstate.jpg"
+        },
+        {
+          "sponsor": "Central Family Practice",
+          "url": "https://centralfamilypractice.com/",
+          "logo": "../images/sponsor-logos/CentralFamilyPractice.jpg"
+        },
+        {
+          "sponsor": "UB Kitchens",
+          "url": "https://ubkitchens.com/",
+          "logo": "../images/sponsor-logos/UBKitchens.jpg"
+        }
+      ]
+    },
+    {
+      "level": "Platinum",
+      "levelItems": [
+        {
+          "sponsor": "Duhon Electric",
+          "url": "https://www.duhonelectric.com/",
+          "logo": "../images/sponsor-logos/Duhon-Electric.jpg"
+        },
+        {
+          "sponsor": "Red Fan Communications",
+          "url": "https://www.redfancommunications.com/",
+          "logo": "../images/sponsor-logos/Red-Fan-Communications.svg"
+        },
+        {
+          "sponsor": "Zoll Firm",
+          "url": "https://zollfirm.com/",
+          "logo": "../images/sponsor-logos/zoll.jpg"
+        },
+        {
+          "sponsor": "Birds Barbershop",
+          "url": "https://birdsbarbershop.com/",
+          "logo": "../images/sponsor-logos/BirdsBarbershop.jpg"
+        }
+      ]
+    },
+    {
+      "level": "Gold",
+      "levelItems": [
+        {
+          "sponsor": "Cirrus Logic",
+          "url": "https://www.cirrus.com/",
+          "logo": "../images/sponsor-logos/CirrusLogic.jpg"
+        },
+        {
+          "sponsor": "Yost Automotive",
+          "url": "http://www.yostauto.com/",
+          "logo": "../images/sponsor-logos/Yost.jpg"
+        },
+        {
+          "sponsor": "Smiles of Austin",
+          "url": "http://www.smilesofaustin.net/",
+          "logo": "../images/sponsor-logos/Smiles-Austin.jpg"
+        },
+        {
+          "sponsor": "Symmetry Physical Therapy",
+          "url": "https://symmetryptaustin.com/",
+          "logo": "../images/sponsor-logos/SymmetryPhysicalTherapy.jpg"
+        }
+      ]
+    }
+  ]
+}

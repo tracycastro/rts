@@ -1,0 +1,60 @@
+<div class="rts-container">
+  <h2 class="rts-levels-heading">Which Donor Level Is Right for You?</h2>
+  <div class="rts-wrapper">
+    <div class="donor__list">
+      {% for item in levels.items %}
+      <div class="level-desc {{item.levelName}}">
+        <h3>{{ item.levelName }}</h3>
+        <p class="item-price">{{ item.price }}</p>
+      </div>
+      <div class="nameOnWebsite {{ item.levelName }}">
+        {% if item.nameOnWebsite %}
+        <img src="/images/website-icon.svg" alt="website icon" width="35" />
+        <p>Your name on the Giving Page of the mactheatre.com website</p>
+        {% endif %}
+      </div>
+      <div class="nameInPlaybill {{ item.levelName }}">
+        {% if item.nameInPlaybill %}
+        <img
+          src="/images/playbill-icon.svg"
+          alt="playbill-icon icon"
+          width="50"
+          height="auto"
+        />
+        <p>Your name on the donor recognition page included in each playbill</p>
+        {% endif %}
+      </div>
+      <div class="earlyAccess {{ item.levelName }}">
+        {% if item.earlyTickets %}
+        <img src="/images/ticket-icon.svg" alt="tickets icon" width="40" />
+        <p>Early access to purchase tickets</p>
+        {% endif %}
+      </div>
+      <div class="freeTickets {{ item.levelName }}">
+        {% if item.freeTickets > 0 %}
+        <!-- <img src="/images/ticket-icon.svg" alt="ticket icon" width="50" /> -->
+        <p class="rts-display-text">{{item.freeTickets}}</p>
+        <p>Total free tickets for the season</p>
+        {% else %}
+        <p></p>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="rts-container">
+  <div class="levelButton {{ item.levelName }}">
+    <a class="donate button" href="{{ item.buttonLink }}"
+      >Become a Donor&nbsp;→</a
+    >
+  </div>
+</div>
+<div class="rts-container intro">
+  <h3>Corporate Matching Benefits</h3>
+  <p>
+    We will provide you with benefits at the level of your donation combined
+    with your company's match.
+  </p>
+</div>

@@ -1,0 +1,51 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content%}
+<div class="wrapper">
+  <article class="intro">
+    <div class="intro__header">
+      <h2 class="intro__heading">{{ pageHeaderTitle }}</h2>
+    </div>
+    <div class="intro__content">
+      <p class="intro__summary">
+        MacTheatre's continued success depends on our parent volunteers. There
+        are a myriad of ways you can participate and volunteer throughout the
+        year. Join us - it's a lot of fun! Here is a list of open positions.
+        Contact Laura Dooley at
+        <a href="mailto:president@macrts.org">president@macrts.org</a> for more
+        information.
+      </p>
+    </div>
+    <h3>This Year (2021-22)</h3>
+    <div class="contact-wrapper">
+      {% for contact in contacts %} {% if contact.openNow == "yes" %}
+      <div class="contact-container">
+        <ul>
+          <li><strong>{{ contact.position}}</strong></li>
+          <li>
+            <a href="{{ contact.descURL }}">job description</a>
+          </li>
+        </ul>
+      </div>
+      <!--contact-container-->
+      {% endif %} {% endfor %}
+    </div>
+    <!--.contact-wrapper-->
+    <h3>Next Year (2022-23)</h3>
+    <div class="contact-wrapper">
+      {% for contact in contacts %} {% if contact.openNextYear == "yes" %}
+      <div class="contact-container">
+        <ul>
+          <li><strong>{{ contact.position}}</strong></li>
+          <li>
+            <a href="{{ contact.descURL }}">job description</a>
+          </li>
+        </ul>
+      </div>
+      <!--.contact-container-->
+      {% endif %} {% endfor %}
+    </div>
+    <!--.contact-wrapper-->
+  </article>
+</div>
+<!--.wrapper-->
+{% include "partials/prefooter.html" %} {% endblock %}

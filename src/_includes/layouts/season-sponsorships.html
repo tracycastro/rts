@@ -1,0 +1,82 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% set
+rtsItems = collections.featuredRTS %} {% block content %}
+<div class="wrapper">
+  <div class="rts-container">
+    <div class="rts-wrapper rev">
+      <img
+        class="rts-img"
+        max-witdh="300"
+        src="../images/vignette-photos/Vignette-Photo-20.jpg"
+      />
+
+      <div class="inner">
+        <h2 class="rts__heading headline">Season Sponsorships</h2>
+        <p class="rts__summary">
+          Align your brand with MacTheatre! Sponsoring our 2022/2023 season will
+          help you gain visibility in the community and achieve your civic
+          engagement and social responsibility goals. MacTheatre sponsors are
+          essential to sustaining a high quality, tuition-free theatre program
+          and developing the next generation of performing artists in Central
+          Texas.
+        </p>
+        <p class="rts__summary">
+          Questions? Contact
+          <a href="development@macrts.org">development@macrts.org</a>
+        </p>
+      </div>
+      <!--inner-->
+    </div>
+    <!--rts-wrapper-->
+  </div>
+  <!--container-->
+  <div class="rts-container">{% include "partials/sponsor-level.html" %}</div>
+  <div class="rts-container">
+    <div class="inner sponsor-info">
+      <h2 class="rts-levels-heading">Additional Information</h2>
+      <p>
+        MacTheatre produces <b>four shows</b> each season, with a combined
+        audience of <b>8,000 to 10,000 patrons</b>.
+      </p>
+      <p>
+        <b>Logo/Profile Links</b> – Logos and profile pictures on the macrts.org
+        site will link to the web page of the sponsor’s choice. See our
+        <a href="/">home page</a> and our
+        <a href="/sponsors/" target="_blank">sponsor page</a> for examples.
+      </p>
+      <p>
+        <b>Post-Production Emails</b> – After the run of each show, an email is
+        sent to all the patrons of the show.
+      </p>
+      <p>
+        <b>Promotional Emails</b> – Leading up to each show, three separate
+        publicity emails are sent to ~5000 continuously updated email addresses
+        of patrons from recent shows.
+      </p>
+      <p>
+        <b>Social Shout-Outs</b> – MacTheatre will provide at least two group
+        social shout-outs, one in the fall and one in the spring, that include
+        all season sponsors, on
+        <a href="https://www.facebook.com/MacTheatre" target="_blank"
+          >Facebook</a
+        >
+        and/or
+        <a href="https://www.instagram.com/mactheatremfaa/" target="_blank"
+          >Instagram</a
+        >. Shout-out design is at the discretion of MacTheatre.
+      </p>
+      <p>
+        <b>Tickets</b> – You will receive a pass code that allows you to comp up
+        to four or eight tickets (depending on your sponsorship level) for the
+        season. The pass code may be used for tickets for any combination of
+        performances and shows, up to your ticket limit.
+      </p>
+      <p>
+        <b>Employee/Client Tickets</b> – Season sponsors may contact
+        <a href="mailto:development@macrts.org">development@macrts.org</a> for
+        up to eight comp tickets for clients and employees for the season.
+      </p>
+    </div>
+  </div>
+</div>
+{% include "partials/submit-artwork.html" %} {% include
+"partials/prefooter.html" %} {% endblock %}

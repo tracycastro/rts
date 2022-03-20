@@ -1,0 +1,57 @@
+{
+  "items": [
+    {
+      "level": "Restaurants",
+      "tag": "Thanks for feeding our casts and crews this season!",
+      "levelItems": [
+        {
+          "sponsor": "Happy Chicks",
+          "url": "https://www.happychicks.com/",
+          "logo": "../images/in-kind-logos/Happy-Chicks.jpg"
+        },
+        {
+          "sponsor": "Capriotti's Sandwich Shop",
+          "url": "https://www.capriottis.com/",
+          "logo": "../images/in-kind-logos/capriottis-logo.jpg"
+        },
+        {
+          "sponsor": "Desano Pizza",
+          "url": "http://www.desanopizza.com/",
+          "logo": "../images/in-kind-logos/Desano.jpg"
+        },
+        {
+          "sponsor": "Home Slice Pizza",
+          "url": "https://homeslicepizza.com/",
+          "logo": "../images/in-kind-logos/homeslice-pizza.jpg"
+        },
+        {
+          "sponsor": "Jew Boy Subshop",
+          "url": "http://jewboysubshop.com/",
+          "logo": "../images/in-kind-logos/Jew-Boy-Sub-Shop.jpeg"
+        }
+      ]
+    },
+    {
+      "level": "Lawncare",
+      "tag": "Thank you for the landscaping services",
+      "levelItems": [
+        {
+          "sponsor": "Emerald Lawns",
+          "url": "https://emeraldlawns.com/",
+          "logo": "../images/in-kind-logos/Emerald-Lawns.jpg"
+        }
+      ]
+    },
+    {
+      "level": "Printing",
+      "tag": "Thank you for your generous gift of printing services for our playbills and posters",
+      "levelItems": [
+        {
+          "sponsor": "Global Printing Solutions",
+          "url": "http://www.gpsaustin.com/",
+          "logo": "../images/in-kind-logos/Global-Printing.jpg"
+        }
+      ]
+    }
+  ]
+}

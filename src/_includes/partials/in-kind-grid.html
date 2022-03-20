@@ -1,0 +1,29 @@
+<article class="intro">
+  <div class="intro__header">
+    <h2 class="intro__heading">In-Kind Contributions</h2>
+    <p class="intro-summary">
+      A heartfelt thanks to the follow compainies for their in-kind
+      contributions to MacTheatre!
+    </p>
+  </div>
+</article>
+{% for item in inKindLevels.items %}
+<div class="level">
+  <h3>{{ item.level }}</h3>
+  <p class="intro">{{ item.tag }}</p>
+</div>
+<div class="sponsor-logos-container">
+  {% for levelItem in item.levelItems %}
+  <div class="sponsor-logos-item">
+    <a href="{{levelItem.url}}" target="_blank"
+      ><img
+        class="sponsor-logos-img"
+        src="{{levelItem.logo}}"
+        alt="{{ levelItem.sponsor}}"
+    /></a>
+  </div>
+  {% endfor %}
+  <!--.sponsor-logos-item-->
+</div>
+<!--.sponsor-logos-container-->
+{% endfor %}

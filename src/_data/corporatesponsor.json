@@ -1,0 +1,33 @@
+{
+  "items": [
+    {
+      "levelName": "production",
+      "price": "$500",
+      "backOfPlaybill": "true",
+      "adInPlaybill": "half page",
+      "adIcon": "../images/half-icon.svg",
+      "lobbyDisplay": "true",
+      "linkOnHomePage": "true",
+      "profileOnWebsite": "true",
+      "logoOnPostProdEmail": "true",
+      "logoOnPromoEmail": "false",
+      "socialShoutout": "false",
+      "freeTickets": "4"
+    },
+    {
+      "levelName": "season",
+      "price": "$1000",
+      "backOfPlaybill": "true",
+      "adInPlaybill": "full page",
+      "adIcon": "../images/full-icon.svg",
+      "lobbyDisplay": "true",
+      "linkOnHomePage": "true",
+      "profileOnWebsite": "true",
+      "logoOnPostProdEmail": "true",
+      "logoOnPromoEmail": "true",
+      "socialShoutout": "true",
+      "freeTickets": "8",
+      "employeeTix": "up to 8 tickets by request"
+    }
+  ]
+}

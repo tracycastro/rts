@@ -1,0 +1,50 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %}
+<div class="wrapper">
+  <div class="rts-container">
+    <div class="rts-wrapper first-wrapper-item">
+      <img
+        class="rts-img"
+        max-witdh="300"
+        src="../images/vignette-photos/Vignette-Photo-17.jpg"
+      />
+      <div class="inner">
+        <h2 class="rts__heading headline">{{ title }}</h2>
+        <p class="rts__summary">
+          Support MacTheatre and get to know the other Royale Theatre Society
+          parents. It’s fun, requires very little time, and volunteers get
+          <b>free seats</b> to the performances at which they volunteer.
+          On-the-job training, no experience required!
+        </p>
+        <p class="rts__summary">
+          The next opportunity to volunteer for a show will be for Eurydice,
+          which runs May 12, 2022 – May 15, 2022. Once that sign-up list is
+          available, we will post it here.
+        </p>
+      </div>
+      <!--inner-->
+    </div>
+    <!--.rts-container-->
+  </div>
+  <div class="rts-container">
+    <article class="intro">
+      <h2>Typical Volunteer Jobs for MacTheatre</h2>
+      <ul class="typical-jobs">
+        <li><b>Box Office</b> – Manage will call and sell door tickets.</li>
+        <li>
+          <b> Concessions</b> – Sell food, beverages, and merchandise before the
+          show and during intermission. Manage send-backs (concession items sent
+          back to the cast and crew after the show).
+        </li>
+        <li>
+          <b>Meals</b> – Bring pre-show snacks/meals to the cast and crew.
+        </li>
+        <li>
+          <b> Usher</b> – Check tickets at the door and help patrons find their
+          seats.
+        </li>
+      </ul>
+    </article>
+  </div>
+</div>
+{% include "partials/prefooter.html" %} {% endblock %}

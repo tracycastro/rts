@@ -1,4 +1,5 @@
 // form validation
+//this is not currently in use since there is no form.
 document.addEventListener(
   "blur",
   function (event) {

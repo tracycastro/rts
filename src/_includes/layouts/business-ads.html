@@ -1,0 +1,60 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% set
+rtsItems = collections.featuredRTS3 %} {% block content %}
+<div class="wrapper">
+  <div class="rts-container">
+    {% for item in rtsItems %}
+    <div class="rts-wrapper first-wrapper-item">
+      <img class="rts-img" max-witdh="300" src="{{ item.data.imageURL }}" />
+
+      <div class="inner">
+        <h2 class="rts__heading headline">{{ item.data.title }}</h2>
+        <p class="rts__summary">
+          {{ item.data.explainer }} Lookng to buy a tribute for a student?
+          <a href="/tributes/">Click here!</a>
+        </p>
+        <p class="rts__summary">{{ item.data.summary }}</p>
+        <p class="rts__summary">{{ item.data.body }}</p>
+        <p class="rts__summary">
+          Questions? Contact
+          <a href="mailto:acthpb@gmail.com">Macthpb@gmail.com</a>
+        </p>
+      </div>
+      <!--inner-->
+    </div>
+    <!--wrapper-->
+    {% endfor %}
+  </div>
+  {% include "partials/show-list.html" %}
+  <div class="rts-container">
+    <h2 class="rts-levels-heading">Business Ad Specifications</h2>
+    <p style="text-align: center">
+      Looking for ad ideas and inspiration? Check out a copy of a recent
+      playbill
+      <a href="/">here</a>!
+    </p>
+    <div class="ad-spec-container">
+      {% for item in levels.items %} {% if item.adSize %}
+      <div class="ad-image">
+        <img src="{{ item.adExampleImg }}" alt="Example of ad" width="150" />
+      </div>
+      <div class="ad-specs">
+        <p class="rts-ad-text">{{item.ad}} page</p>
+        <p>
+          The {{ item.ad }} page business ads are
+          <span class="emphasis">{{ item.adDimension }} </span>{{ item.adSize }}
+          (approximately {{ item.adSizeIn }}).
+        </p>
+        <a class="donate button" href="{{ item.businessLink }}"
+          >buy now {{ item.businessAd }}</a
+        >
+      </div>
+
+      {% endif %} {% endfor %}
+    </div>
+    <!--.ad-spec-container-->
+  </div>
+  <!--.rts-container-->
+
+  {% include "partials/submit-artwork.html" %}
+</div>
+{% include "partials/prefooter.html" %} {% endblock %}

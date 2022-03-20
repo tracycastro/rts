@@ -1,7 +1,6 @@
 {
   "name": "new-project",
   "version": "1.0.0",
-  "description": "",
   "main": ".eleventy.js",
   "scripts": {
     "start": "npx eleventy --serve"
@@ -11,6 +10,16 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-cache-assets": "^2.3.0",
     "moment": "^2.29.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tracycastro/rts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tracycastro/rts/issues"
+  },
+  "homepage": "https://github.com/tracycastro/rts#readme",
+  "description": ""
 }

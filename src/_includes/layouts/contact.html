@@ -1,74 +1,29 @@
 {% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
 content%}
-<div class="rts-container">
-  <div class="rts-wrapper form-page">
-    <div class="contact-info intro">
-      <h2 class="intro__heading">Contact</h2>
-      <p>
-        Hello! We'd love to hear from you! Use this contact form to send us a
-        note with any questions or comments for RTS! Or you can email us at
-        <a href="mailto:macRTSpresident@gmail.com">macRTSpresident@gmail.com</a
-        >.
+<div class="wrapper">
+  <article class="intro">
+    <div class="intro__header">
+      <h2 class="intro__heading">{{ pageHeaderTitle }}</h2>
+    </div>
+    <div class="intro__content">
+      <p class="intro__summary">
+        Questions or comments? We'd love to hear from you. Here is a roster of
+        RTS boardmembers and committee chairs, along with their email addresses.
       </p>
+      <div class="contact-wrapper">
+        {% for contact in contacts %}
+        <div class="contact-container">
+          <ul>
+            <li><strong>{{ contact.position}}</strong></li>
+            <li>{{ contact.name }}</li>
+            <li>
+              <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+            </li>
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
     </div>
-    <div class="form-container">
-      <form
-        name="contact"
-        action="/contact-success"
-        method="post"
-        data-netlify="true"
-      >
-        <div class="form-section">
-          <label for="name">Name *</label>
-          <input
-            required
-            type="text"
-            id="name"
-            name="name"
-            aria-describedby="name-validation"
-            autocomplete="name"
-          /><span
-            id="name-validation"
-            aria-live="assertive"
-            class="validation-message"
-          ></span>
-        </div>
-        <div class="form-section">
-          <label for="email">E-mail *</label>
-          <input
-            required
-            type="email"
-            id="email"
-            name="email"
-            aria-describedby="email-validation"
-            autocomplete="email"
-          />
-          <span
-            id="email-validation"
-            aria-live="assertive"
-            class="validation-message"
-          ></span>
-        </div>
-        <div class="form-section">
-          <label for="msg">Message *</label>
-          <textarea
-            required
-            id="msg"
-            name="message"
-            aria-describedby="message-validation"
-          ></textarea>
-          <span
-            id="message-validation"
-            aria-live="assertive"
-            class="validation-message"
-          ></span>
-        </div>
-        <div class="form-section button-container">
-          <button>Submit</button>
-        </div>
-      </form>
-    </div>
-  </div>
+  </article>
 </div>
-
-{% endblock %}
+{% include "partials/prefooter.html" %} {% endblock %}

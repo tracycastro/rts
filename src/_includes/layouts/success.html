@@ -1,9 +1,25 @@
 {% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
 content %}
-<div class="rts-container">
-  <h2>Thank you for your Donation!</h2>
-  <p>Thank you for supporting MacTheatre!</p>
-  <p>Here is info about how your ludus coupon codes will come to you.</p>
-  <p>Here is info about submitting your artwork.</p>
+<div class="wrapper">
+  <article class="intro">
+    <div class="intro__header">
+      <h2 class="intro__heading">Thank you for you donation!</h2>
+    </div>
+    <div class="intro__content">
+      <p class="intro__summary">
+        If you purchased a year-long sponsorship that includes free tickets, the
+        coupon codes for tickets will come to you in a separate email from
+        Ludus, our ticketing platform.
+      </p>
+      <p class="intro__summary">
+        To reserve seats to one of our productions,
+        <a href="https://mccallum.ludus.com/index.php" target="_blank"
+          >visit our Ludus site</a
+        >.
+      </p>
+    </div>
+  </article>
+
+  {% include "partials/submit-artwork.html" %}
 </div>
-{% endblock %}
+{% include "partials/prefooter.html" %} {% endblock %}

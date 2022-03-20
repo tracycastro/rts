@@ -24,6 +24,24 @@ module.exports = (config) => {
       collection.getFilteredByGlob("./src/rts/*.md")
     ).filter((x) => x.data.ads);
   });
+  // Returns rts items, sorted by display order then filtered by featured3 (business)
+  config.addCollection("featuredRTS3", (collection) => {
+    return sortByDisplayOrder(
+      collection.getFilteredByGlob("./src/rts/*.md")
+    ).filter((x) => x.data.business);
+  });
+  // Returns rts items, sorted by display order then filtered by featured4 (headshots)
+  config.addCollection("featuredRTS4", (collection) => {
+    return sortByDisplayOrder(
+      collection.getFilteredByGlob("./src/rts/*.md")
+    ).filter((x) => x.data.bios);
+  });
+  // Returns rts items, sorted by display order then filtered by featured5 (googlegroup)
+  config.addCollection("featuredRTS5", (collection) => {
+    return sortByDisplayOrder(
+      collection.getFilteredByGlob("./src/rts/*.md")
+    ).filter((x) => x.data.googlegroup);
+  });
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",

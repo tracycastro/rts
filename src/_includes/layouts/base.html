@@ -7,6 +7,14 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="../css/normalize.css" media="screen" />
     <link rel="stylesheet" href="../css/styles.css" media="screen" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity-fade@1/flickity-fade.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,13 +22,30 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body tabindex="-1">
     {% include "partials/site-head.html" %}
     <main tabindex="-1" id="main-content">
       {% block content %}{% endblock %}
     </main>
     <footer>{% include "partials/footer.html" %}</footer>
-    <script src="/js/form-validation.js"></script>
+    <!-- <script src="/js/form-validation.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <script src="/js/main.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script>
+    <!-- Givebutter Elements -->
+    <script>
+      window.Givebutter =
+        window.Givebutter ||
+        function () {
+          (Givebutter.q = Givebutter.q || []).push(arguments);
+        };
+      Givebutter.l = +new Date();
+      window.Givebutter("setOptions", {
+        accountId: "KPe1bwjukkF16tMN",
+      });
+    </script>
+    <script async src="https://js.givebutter.com/elements/latest.js"></script>
+    <!-- End Givebutter Elements -->
   </body>
 </html>

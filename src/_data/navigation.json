@@ -1,20 +1,144 @@
 {
   "items": [
     {
-      "text": "Sponsorship",
-      "url": "/sponsorship"
+      "text": "Ways to Give",
+      "id": "ways-to-give",
+      "subitems": [
+        {
+          "text": "Individual Donors",
+          "url": "/individual-donors/"
+        },
+        {
+          "text": "Season Sponsorships",
+          "url": "/season-sponsorships/"
+        },
+        {
+          "text": "Concessions Sponsorships",
+          "url": "/partnerships/#concessions-sponsorship"
+        },
+        {
+          "text": "Tech Theatre Sponsorships",
+          "url": "/partnerships/#techtheatre-sponsorship"
+        },
+        {
+          "text": "Corporate Community Investments",
+          "url": "/partnerships/#corporate-community-investment"
+        },
+        {
+          "text": "In-Kind Contributions",
+          "url": "/partnerships/#in-kind-contributions"
+        },
+        {
+          "text": "Amazon Smile",
+          "url": "https://smile.amazon.com/ch/87-2157644"
+        }
+      ]
     },
     {
-      "text": "Playbill Ads",
-      "url": "/one-time-ads"
+      "text": "Our Supporters",
+      "id": "our-supporters",
+      "subitems": [
+        {
+          "text": "Individual Donors",
+          "url": "/donors/"
+        },
+        {
+          "text": "Sponsors",
+          "url": "/sponsors/"
+        },
+        {
+          "text": "In-Kind Contributions",
+          "url": "/in-kind-contributions"
+        }
+      ]
     },
     {
-      "text": "Submit Headshot & Bio",
-      "url": "https://docs.google.com/forms/d/e/1FAIpQLSehYtsz0YA8FcokbkZktpsTomD9pr-kKk_jEfe2mCboFnFECQ/viewform"
+      "text": "Purchase Ads & Tributes",
+      "id": "purchase-ads-tributes",
+      "subitems": [
+        {
+          "text": "Business Ads",
+          "url": "/business-ads/"
+        },
+        {
+          "text": "Student Tributes",
+          "url": "/tributes/"
+        }
+      ]
     },
     {
-      "text": "Tickets",
-      "url": "https://mccallum.ludus.com/index.php"
+      "text": "Playbill Submissions",
+      "id": "playbill-sub",
+      "subitems": [
+        {
+          "text": "Ad/Tribute Artwork Submission",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSepCc1aDTwsdsMnuD2CKmMHokAVadTNA-MWCvz9Da8_GtoIjw/viewform"
+        },
+        {
+          "text": "Headshot & Bio Submission",
+          "url": "/headshots-bios"
+        }
+      ]
+    },
+    {
+      "text": "Get Involved",
+      "id": "get-involved",
+      "subitems": [
+        {
+          "text": "Volunteer for a Show",
+          "url": "/volunteer/"
+        },
+        {
+          "text": "Open RTS Positions",
+          "url": "/open-positions/"
+        },
+        {
+          "text": "Calendar",
+          "url": "https://calendar.google.com/calendar/u/0?cid=Y19sbDF0a2F2Y2duNm92Z2VwYWNsaG9lMXA1b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+        },
+        {
+          "text": "Google Group",
+          "url": "/google-group/"
+        }
+      ]
+    },
+    {
+      "text": "Performances",
+      "id": "performances",
+      "subitems": [
+        {
+          "text": "Purchase Tickets",
+          "url": "https://mccallum.ludus.com/index.php"
+        },
+        {
+          "text": "The Spongebob Musical",
+          "url": "https://mactheatre.com/spongebob"
+        },
+        {
+          "text": "Princess Tea Party",
+          "url": "https://mactheatre.com/princess-tea-party"
+        },
+        {
+          "text": "All the Way Home",
+          "url": "https://mactheatre.com/all-the-way-home"
+        },
+        {
+          "text": "Joseph and the Amazing Technicolor Dreamcoat",
+          "url": "https://mactheatre.com/joseph"
+        },
+        {
+          "text": "Eurydice",
+          "url": "https://mactheatre.com/eurydice"
+        },
+        {
+          "text": "Plan Your Visit",
+          "url": "/visit/"
+        },
+        {
+          "text": "Latest Show Video",
+          "url": "/latest-show-video/"
+        }
+      ]
     }
   ]
 }

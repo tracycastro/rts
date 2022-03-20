@@ -16,8 +16,11 @@
         <span class="emphasis">{{ item.adDimension }} </span>{{ item.adSize }}
         (approximately {{ item.adSizeIn }}).
       </p>
-      <button class="one-time-ad-button">buy now {{ item.singlePrice }}</button>
+      <button class="one-time-ad-button">
+        buy now {{ item.tributePrice }}
+      </button>
     </div>
+
     {% endif %} {% endfor %}
   </div>
   <!--.ad-spec-container-->
