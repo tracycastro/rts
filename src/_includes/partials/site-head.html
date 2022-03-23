@@ -31,8 +31,21 @@
         {{ item.text }}
       </button>
       <ul class="dropdown__menu" aria-labelledby="{{ item.id }}">
-        {% for subitem in item.subitems %}
+        {% for subitem in item.subitems %} {% if subitem.subsubitems  %}
+        <li class="sub-dropdown"><button type="button"
+        class="sub-dropdown__title"
+        aria-expanded="false"
+        aria-controls="sub-primary-dropdown"
+        id="{{ item.id }}">{{ subitem.text }}</button>
+        <ul class="sub-dropdown__menu" aria-labelledby="{{ subitem.id }}">
+          {% for subsubitem in subitem.subsubitems %}
+          <li><a href="{{ subsubitem.url }}">{{ subsubitem.text }}</a></li>
+          {% endfor %}
+        </ul>
+        {% else %}
         <li><a href="{{ subitem.url }}">{{ subitem.text }}</a></li>
+        {% endif %}
+      </li>
         {% endfor %}
       </ul>
       {% else %}

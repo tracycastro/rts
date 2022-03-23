@@ -1,28 +1,35 @@
 {
   "items": [
     {
-      "text": "Ways to Give",
-      "id": "ways-to-give",
+      "text": "Support MacTheatre",
+      "id": "support-mactheatre",
       "subitems": [
         {
-          "text": "Individual Donors",
+          "text": "Donate Now",
           "url": "/individual-donors/"
         },
+
         {
-          "text": "Season Sponsorships",
-          "url": "/season-sponsorships/"
-        },
-        {
-          "text": "Concessions Sponsorships",
-          "url": "/partnerships/#concessions-sponsorship"
-        },
-        {
-          "text": "Tech Theatre Sponsorships",
-          "url": "/partnerships/#techtheatre-sponsorship"
-        },
-        {
-          "text": "Corporate Community Investments",
-          "url": "/partnerships/#corporate-community-investment"
+          "text": "Become a Corporate/Business Sponsor",
+          "id": "business-sponsor",
+          "subsubitems": [
+            {
+              "text": "Season Sponsorships",
+              "url": "/season-sponsorships/"
+            },
+            {
+              "text": "Concessions Sponsorships",
+              "url": "/partnerships/#concessions-sponsorship"
+            },
+            {
+              "text": "Tech Theatre Sponsorships",
+              "url": "/partnerships/#techtheatre-sponsorship"
+            },
+            {
+              "text": "Corporate Community Investments",
+              "url": "/partnerships/#corporate-community-investment"
+            }
+          ]
         },
         {
           "text": "In-Kind Contributions",
@@ -31,52 +38,58 @@
         {
           "text": "Amazon Smile",
           "url": "https://smile.amazon.com/ch/87-2157644"
-        }
-      ]
-    },
-    {
-      "text": "Our Supporters",
-      "id": "our-supporters",
-      "subitems": [
+        },
         {
-          "text": "Individual Donors",
+          "text": "Donor Acknowledgements",
           "url": "/donors/"
         },
         {
-          "text": "Sponsors",
+          "text": "Sponsor Acknowledgements",
           "url": "/sponsors/"
         },
         {
-          "text": "In-Kind Contributions",
+          "text": "Contributor Acknowledgements",
           "url": "/in-kind-contributions"
         }
       ]
     },
     {
-      "text": "Purchase Ads & Tributes",
-      "id": "purchase-ads-tributes",
+      "text": "Ads & Tributes",
+      "id": "ads-tributes",
       "subitems": [
         {
-          "text": "Business Ads",
+          "text": "Purchase Playbill Business Ad",
           "url": "/business-ads/"
         },
         {
-          "text": "Student Tributes",
+          "text": "Purchase Playbill Student Tribute",
           "url": "/tributes/"
+        },
+        {
+          "text": "Ad/Tribute Artwork Submission",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSepCc1aDTwsdsMnuD2CKmMHokAVadTNA-MWCvz9Da8_GtoIjw/viewform"
         }
       ]
     },
     {
-      "text": "Playbill Submissions",
-      "id": "playbill-sub",
+      "text": "Current Students",
+      "id": "current-students",
       "subitems": [
-        {
-          "text": "Ad/Tribute Artwork Submission",
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLSepCc1aDTwsdsMnuD2CKmMHokAVadTNA-MWCvz9Da8_GtoIjw/viewform"
-        },
         {
           "text": "Headshot & Bio Submission",
           "url": "/headshots-bios"
+        },
+        {
+          "text": "Production Fee Scholarship Application",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSd-NLg01yZ6NRFcMpP62dcFfDU3Dcd-MkGjqQUuV5g2pGpKAw/viewform"
+        },
+        {
+          "text": "Senior Scholarship Application",
+          "url": "/"
+        },
+        {
+          "text": "Royale Court Players",
+          "url": "https://mactheatre.com/thespians"
         }
       ]
     },

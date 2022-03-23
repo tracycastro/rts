@@ -28,10 +28,7 @@ if (
   window.location.pathname == "/business-ads/" ||
   window.location.pathname == "/headshots-bios/"
 ) {
-  console.log("i'm here");
-
   const duedatePara = document.querySelectorAll(".duedate");
-
   const playTitle = document.querySelector(".duedate").previousElementSibling;
 
   duedatePara.forEach((duedatePara) => {
@@ -47,8 +44,10 @@ if (
 
 const mQuery = window.matchMedia("(max-width: 768px)");
 const siteNav = document.querySelector(".site-head__nav");
-const siteButtons = siteNav.querySelectorAll('[type="button"]');
+const siteButtons = siteNav.querySelectorAll(".dropdown__title");
 const siteSubMenus = Array.from(siteNav.querySelectorAll(".dropdown__menu"));
+const siteSubSubMenu = siteNav.querySelector(".sub-dropdown__menu");
+const subSubButton = siteNav.querySelector(".sub-dropdown__title");
 
 function handleResize(e) {
   // Check if the media query is true
@@ -58,6 +57,18 @@ function handleResize(e) {
     siteSubMenus.forEach((menu) => {
       menu.hidden = true;
     });
+    siteSubSubMenu.hidden = true;
+    function handleSubButtonClick(event) {
+      console.log("Heyyyy");
+      event.preventDefault();
+      event.currentTarget.setAttribute("aria-expanded", true);
+      if (siteSubSubMenu.hidden == true) {
+        siteSubSubMenu.hidden = false;
+      } else {
+        siteSubSubMenu.hidden = true;
+      }
+    }
+    subSubButton.addEventListener("click", handleSubButtonClick);
     function handleSiteButtonClick(event) {
       siteButtons.forEach((button) => {
         button.setAttribute("aria-expanded", false);
@@ -78,6 +89,7 @@ function handleResize(e) {
     );
   } else {
     console.log("It is big");
+    siteSubSubMenu.hidden = false;
     siteSubMenus.forEach((menu) => {
       menu.hidden = false;
     });
