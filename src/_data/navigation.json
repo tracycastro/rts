@@ -6,7 +6,8 @@
       "subitems": [
         {
           "text": "Donate Now",
-          "url": "/individual-donors/"
+          "url": " https://givebutter.com/theatrekid",
+          "externalLink": "true"
         },
 
         {
@@ -37,7 +38,8 @@
         },
         {
           "text": "Amazon Smile",
-          "url": "https://smile.amazon.com/ch/87-2157644"
+          "url": "https://smile.amazon.com/ch/87-2157644",
+          "externalLink": "true"
         },
         {
           "text": "Donor Acknowledgements",
@@ -49,7 +51,7 @@
         },
         {
           "text": "Contributor Acknowledgements",
-          "url": "/in-kind-contributions"
+          "url": "/in-kind-contributions/"
         }
       ]
     },
@@ -67,7 +69,8 @@
         },
         {
           "text": "Ad/Tribute Artwork Submission",
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLSepCc1aDTwsdsMnuD2CKmMHokAVadTNA-MWCvz9Da8_GtoIjw/viewform"
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSdXiFoO-NkI8EsLbTaLBM4UkvmmYYabSVWO9ggqzb9-AmNK3A/viewform",
+          "externalLink": "true"
         }
       ]
     },
@@ -77,11 +80,12 @@
       "subitems": [
         {
           "text": "Headshot & Bio Submission",
-          "url": "/headshots-bios"
+          "url": "/headshots-bios/"
         },
         {
           "text": "Production Fee Scholarship Application",
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLSd-NLg01yZ6NRFcMpP62dcFfDU3Dcd-MkGjqQUuV5g2pGpKAw/viewform"
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSd-NLg01yZ6NRFcMpP62dcFfDU3Dcd-MkGjqQUuV5g2pGpKAw/viewform",
+          "externalLink": "true"
         },
         {
           "text": "Senior Scholarship Application",
@@ -89,7 +93,8 @@
         },
         {
           "text": "Royale Court Players",
-          "url": "https://mactheatre.com/thespians"
+          "url": "https://mactheatre.com/thespians",
+          "externalLink": "true"
         }
       ]
     },
@@ -107,7 +112,8 @@
         },
         {
           "text": "Calendar",
-          "url": "https://calendar.google.com/calendar/u/0?cid=Y19sbDF0a2F2Y2duNm92Z2VwYWNsaG9lMXA1b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+          "url": "https://calendar.google.com/calendar/u/0?cid=Y19sbDF0a2F2Y2duNm92Z2VwYWNsaG9lMXA1b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t",
+          "externalLink": "true"
         },
         {
           "text": "Google Group",
@@ -121,27 +127,33 @@
       "subitems": [
         {
           "text": "Purchase Tickets",
-          "url": "https://mccallum.ludus.com/index.php"
+          "url": "https://mccallum.ludus.com/index.php",
+          "externalLink": "true"
         },
         {
           "text": "The Spongebob Musical",
-          "url": "https://mactheatre.com/spongebob"
+          "url": "https://mactheatre.com/spongebob",
+          "externalLink": "true"
         },
         {
           "text": "Princess Tea Party",
-          "url": "https://mactheatre.com/princess-tea-party"
+          "url": "https://mactheatre.com/princess-tea-party",
+          "externalLink": "true"
         },
         {
           "text": "All the Way Home",
-          "url": "https://mactheatre.com/all-the-way-home"
+          "url": "https://mactheatre.com/all-the-way-home",
+          "externalLink": "true"
         },
         {
           "text": "Joseph and the Amazing Technicolor Dreamcoat",
-          "url": "https://mactheatre.com/joseph"
+          "url": "https://mactheatre.com/joseph",
+          "externalLink": "true"
         },
         {
           "text": "Eurydice",
-          "url": "https://mactheatre.com/eurydice"
+          "url": "https://mactheatre.com/eurydice",
+          "externalLink": "true"
         },
         {
           "text": "Plan Your Visit",

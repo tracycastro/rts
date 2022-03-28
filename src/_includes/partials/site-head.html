@@ -4,6 +4,7 @@
       <a href="/" aria-label="{{ site.name }} - home" class="site-head__brand">
         {% include "partials/brand.svg" %} <span>Royale Theatre Society</span>
       </a>
+      <a class="social-nav__button" target="_blank" href="https://givebutter.com/theatrekid">donate</a>
       <ul class="social-nav">
       {% include "partials/social-menu.html" %}
         <li class="social-nav-item">
@@ -43,7 +44,7 @@
           {% endfor %}
         </ul>
         {% else %}
-        <li><a href="{{ subitem.url }}">{{ subitem.text }}</a></li>
+        <li><a {% if subitem.externalLink == 'true' %} target="_blank" {% endif %} href="{{ subitem.url }}">{{ subitem.text }}</a></li>
         {% endif %}
       </li>
         {% endfor %}

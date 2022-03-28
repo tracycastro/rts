@@ -1,7 +1,6 @@
 {% extends "layouts/base.html" %} {% set pageHeaderTitle = title %}{% block
 content %}
 <div class="wrapper">
-  <h2 class="rts-levels-heading">{{ pageHeaderTitle }}</h2>
   <article class="intro">
     <h3 class="visit-heading">
       Joseph and the Amazing Technicolor Dreamcoat - McCallum Fine Arts Academy
@@ -16,8 +15,15 @@ content %}
         allowfullscreen
       ></iframe>
     </div>
+
     <!-- Element Name: Video Button -->
-    <div givebutter-element-id="OL4eGg"></div>
+    <div class="gb-button">
+      <p>
+        Please consider a donation to help us continue to bring you MacTheatre
+        performance videos
+      </p>
+      <div givebutter-element-id="OL4eGg"></div>
+    </div>
   </article>
 </div>
 {% endblock %}

@@ -40,7 +40,7 @@ h6 {
 p,
 address,
 ul.sponsor-checkout-list li,
-ul.plan-your-visit li,
+ul.list li,
 ul.typical-jobs li {
   font-family: "Hind", sans-serif;
   font-size: 1.25rem;
@@ -70,6 +70,7 @@ h2 {
 h3 {
   font-family: "Hind", sans-serif;
   font-size: 1.5rem;
+  text-transform: uppercase;
 }
 .site-head {
   padding: 1rem 0;
@@ -484,6 +485,8 @@ a.site-head__brand:visited {
     object-fit: cover;
     object-position: bottom center;
     min-height: 70vh;
+    background: var(--white);
+    color: var(--white);
   }
 }
 
@@ -518,6 +521,8 @@ main {
   display: flex;
   place-content: center;
   object-fit: cover;
+  background: var(--white);
+  color: var(--white);
 }
 
 .intro {
@@ -533,7 +538,7 @@ p.intro-center {
   text-align: center;
 }
 
-button:not(.dropdown__title, .sub-dropdown__title),
+button:not(.dropdown__title, .sub-dropdown__title, .givebutter-button),
 .button,
 a.social-nav__button {
   display: inline-block;
@@ -567,6 +572,11 @@ a.social-nav__button:hover {
   color: var(--brand);
   cursor: pointer;
 }
+.gb-button {
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
 
 .rts-container {
   margin: 0 auto;
@@ -593,6 +603,9 @@ a.social-nav__button:hover {
   padding-block: 2rem;
   justify-content: center;
   scroll-margin-top: 5em;
+}
+.align-top {
+  align-items: flex-start;
 }
 
 .first-wrapper-item {
@@ -706,7 +719,7 @@ img.sponsor-logos-img {
     margin: 0 auto 1rem;
   }
 }
-ul.plan-your-visit {
+ul.list {
   max-width: 80ch;
   margin: auto;
   margin-block-end: 1rem;
@@ -1160,8 +1173,7 @@ p.item-price {
 }
 .typical-jobs {
   max-width: 75ch;
-  margin: 0 auto;
-  padding-block-start: 1rem;
+  padding-block-start: 0.5rem;
 }
 
 .latest-video {
@@ -1183,18 +1195,18 @@ p.item-price {
 }
 
 .sponsor-checkout-list,
-.plan-your-visit {
+.list {
   list-style-type: disc;
 }
 .sponsor-checkout-list li,
 .typical-jobs li {
   padding-block-end: 2rem;
 }
-.plan-your-visit li {
+.list li {
   padding-block-end: 0.5rem;
   max-width: 100%;
 }
-.plan-your-visit {
+.list {
   padding-inline-start: 3rem;
 }
 
