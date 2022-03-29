@@ -12,7 +12,7 @@
 
         {
           "text": "Become a Corporate/Business Sponsor",
-          "id": "business-sponsor",
+          "subid": "business-sponsor",
           "subsubitems": [
             {
               "text": "Season Sponsorships",
@@ -69,7 +69,7 @@
         },
         {
           "text": "Ad/Tribute Artwork Submission",
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLSdXiFoO-NkI8EsLbTaLBM4UkvmmYYabSVWO9ggqzb9-AmNK3A/viewform",
+          "url": "https://forms.gle/pvrJhdZrotso8Vnv5",
           "externalLink": "true"
         }
       ]

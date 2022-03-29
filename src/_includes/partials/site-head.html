@@ -37,8 +37,8 @@
         class="sub-dropdown__title"
         aria-expanded="false"
         aria-controls="sub-primary-dropdown"
-        id="{{ item.id }}">{{ subitem.text }}</button>
-        <ul class="sub-dropdown__menu" aria-labelledby="{{ subitem.id }}">
+        id="{{ subitem.subid }}">{{ subitem.text }}</button>
+        <ul class="sub-dropdown__menu" aria-labelledby="{{ subitem.subid }}">
           {% for subsubitem in subitem.subsubitems %}
           <li><a href="{{ subsubitem.url }}">{{ subsubitem.text }}</a></li>
           {% endfor %}

@@ -5,6 +5,7 @@ module.exports = (config) => {
   config.addPassthroughCopy("./src/images/");
   config.addPassthroughCopy("./src/css");
   config.addPassthroughCopy("./src/js/");
+  config.addPassthroughCopy("src/_redirects");
   config.addFilter("dateCompare", dateCompare);
   config.addFilter("dateFilter", dateFilter);
   // Returns rts items, sorted by display order

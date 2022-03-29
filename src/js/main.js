@@ -20,7 +20,7 @@ if (
     spread: 70,
     origin: { y: 0.6 },
   });
-  console.log("here is confetti!");
+  // console.log("here is confetti!");
 }
 
 if (
@@ -53,13 +53,13 @@ function handleResize(e) {
   // Check if the media query is true
 
   if (e.matches) {
-    console.log("It is small");
+    // console.log("It is small");
     siteSubMenus.forEach((menu) => {
       menu.hidden = true;
     });
     siteSubSubMenu.hidden = true;
     function handleSubButtonClick(event) {
-      console.log("Heyyyy");
+      // console.log("Heyyyy");
       event.preventDefault();
       event.currentTarget.setAttribute("aria-expanded", true);
       if (siteSubSubMenu.hidden == true) {
@@ -74,10 +74,10 @@ function handleResize(e) {
         button.setAttribute("aria-expanded", false);
       });
       event.currentTarget.setAttribute("aria-expanded", true);
-      const { id } = event.currentTarget;
-      const siteSubMenu = siteSubMenus.find(
-        (menu) => menu.getAttribute("aria-labelledby") === id
-      );
+      // const { id } = event.currentTarget;
+      // const siteSubMenu = siteSubMenus.find(
+      //   (menu) => menu.getAttribute("aria-labelledby") === id
+      // );
       if (siteSubMenu.hidden == true) {
         siteSubMenu.hidden = false;
       } else {
@@ -88,7 +88,7 @@ function handleResize(e) {
       button.addEventListener("click", handleSiteButtonClick)
     );
   } else {
-    console.log("It is big");
+    // console.log("It is big");
     siteSubSubMenu.hidden = false;
     siteSubMenus.forEach((menu) => {
       menu.hidden = false;
