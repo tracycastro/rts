@@ -7,7 +7,12 @@
   <div class="ad-spec-container">
     {% for item in levels.items %} {% if item.adSize %}
     <div class="ad-image">
-      <img src="{{ item.adExampleImg }}" alt="Example of ad" width="150" />
+      <img
+        src="{{ item.adExampleImg }}"
+        alt="Example of ad"
+        width="150"
+        loading="lazy"
+      />
     </div>
     <div class="ad-specs">
       <p class="rts-ad-text">{{item.ad}} page</p>
