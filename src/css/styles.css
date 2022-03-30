@@ -438,7 +438,7 @@ a.site-head__brand:visited {
     font-size: 1.3rem;
   }
   .wrapper {
-    padding: 3rem;
+    padding: 3rem 1rem;
     max-width: 100%;
   }
   .dropdown__menu,
@@ -528,6 +528,9 @@ a.site-head__brand:visited {
     min-height: 70vh;
     background: var(--white);
     color: var(--white);
+  }
+  .sponsor__list {
+    gap: 3rem 2rem;
   }
 }
 
@@ -726,6 +729,13 @@ img.sponsor-logos-img {
 }
 
 @media (max-width: 768px) {
+  .rts-container {
+    max-width: 95vh;
+  }
+  .rts-wrapper {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .sponsor-logos-item {
     flex: 0 0 50%;
     padding: 1rem;
@@ -936,6 +946,11 @@ footer > * {
     "prod-shoutout season-shoutout"
     "prod-tix season-tix"
     "prod-emp-tix season-emp-tix";
+}
+@media (max-width: 768px) {
+  .sponsor__list {
+    gap: 3rem 2rem;
+  }
 }
 .freeTickets,
 .nameInPlaybill,
