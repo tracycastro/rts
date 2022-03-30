@@ -1,5 +1,5 @@
 {% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
-content%}
+content %}
 <div class="wrapper">
   <article class="intro">
     <div class="intro__header">
@@ -10,20 +10,37 @@ content%}
         Questions or comments? We'd love to hear from you. Here is a roster of
         RTS boardmembers and committee chairs, along with their email addresses.
       </p>
-      <div class="contact-wrapper">
-        {% for contact in contacts %}
-        <div class="contact-container">
-          <ul>
-            <li><strong>{{ contact.position}}</strong></li>
-            <li>{{ contact.name }}</li>
-            <li>
-              <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
-            </li>
-          </ul>
-        </div>
-        {% endfor %}
-      </div>
     </div>
+    <h3>RTS Board</h3>
+    <div class="contact-wrapper card-wrapper board">
+      {% for contact in contactCards %} {% if contact.boardMember == "TRUE" %}
+      <div class="contact-card">
+        <h4>{{ contact.position}}</h4>
+        <ul>
+          <li>{{ contact.nameOne }}</li>
+          <li><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li>
+        </ul>
+      </div>
+      <!--contact-card-->
+      {% endif %} {% endfor %}
+    </div>
+    <!--.contact-wrapper-->
+    <h3>RTS Committees</h3>
+    <div class="contact-wrapper card-wrapper">
+      {% for contact in contactCards %} {% if contact.boardMember == "FALSE" %}
+      <div class="contact-card">
+        <h4>{{ contact.position}}</h4>
+        <ul>
+          <li>{{ contact.nameOne }}</li>
+          <li>{{ contact.nameTwo }}</li>
+          <li>{{ contact.nameThree }}</li>
+          <li><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li>
+        </ul>
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+    <!--contact-card-->
   </article>
 </div>
+<!--.wrapper-->
 {% include "partials/prefooter.html" %} {% endblock %}

@@ -1,0 +1,29 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content%}
+<div class="wrapper">
+  <article class="intro">
+    <div class="intro__header">
+      <h2 class="intro__heading">{{ pageHeaderTitle }}</h2>
+    </div>
+    <div class="intro__content">
+      <p class="intro__summary">
+        Questions or comments? We'd love to hear from you. Here is a roster of
+        RTS boardmembers and committee chairs, along with their email addresses.
+      </p>
+      <div class="contact-wrapper">
+        {% for contact in contacts %}
+        <div class="contact-container">
+          <ul>
+            <li><strong>{{ contact.position}}</strong></li>
+            <li>{{ contact.name }}</li>
+            <li>
+              <a href="mailto:{{ contact.email }}">{{ contact.email }}</a>
+            </li>
+          </ul>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </article>
+</div>
+{% include "partials/prefooter.html" %} {% endblock %}
