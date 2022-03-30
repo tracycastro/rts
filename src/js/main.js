@@ -74,10 +74,10 @@ function handleResize(e) {
         button.setAttribute("aria-expanded", false);
       });
       event.currentTarget.setAttribute("aria-expanded", true);
-      // const { id } = event.currentTarget;
-      // const siteSubMenu = siteSubMenus.find(
-      //   (menu) => menu.getAttribute("aria-labelledby") === id
-      // );
+      const { id } = event.currentTarget;
+      const siteSubMenu = siteSubMenus.find(
+        (menu) => menu.getAttribute("aria-labelledby") === id
+      );
       if (siteSubMenu.hidden == true) {
         siteSubMenu.hidden = false;
       } else {
