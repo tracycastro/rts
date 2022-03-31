@@ -7,7 +7,7 @@
         {
           "sponsor": "Happy Chicks",
           "url": "https://www.happychicks.com/",
-          "logo": "../images/in-kind-logos/Happy-Chicks.jpg"
+          "logo": "../images/in-kind-logos/Happy-Chicks.png"
         },
         {
           "sponsor": "Capriotti's Sandwich Shop",
@@ -17,7 +17,7 @@
         {
           "sponsor": "Desano Pizza",
           "url": "http://www.desanopizza.com/",
-          "logo": "../images/in-kind-logos/Desano.jpg"
+          "logo": "../images/in-kind-logos/Desano.png"
         },
         {
           "sponsor": "Home Slice Pizza",
@@ -27,7 +27,7 @@
         {
           "sponsor": "Jew Boy Subshop",
           "url": "http://jewboysubshop.com/",
-          "logo": "../images/in-kind-logos/Jew-Boy-Sub-Shop.jpeg"
+          "logo": "../images/in-kind-logos/Jew-Boy-Sub-Shop.png"
         }
       ]
     },
