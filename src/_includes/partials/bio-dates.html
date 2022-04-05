@@ -2,7 +2,6 @@
   <h2 class="rts-levels-heading">Due Dates</h2>
   <div class="date-container">
     {% for item in deadlines.items %}
-
     <div class="show-and-date">
       <h3 class="play-title">{{ item.showTitle }}</h3>
       <p class="duedate">{{ item.openingNight | dateCompare }}</p>
