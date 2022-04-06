@@ -1,6 +1,20 @@
 {
   "items": [
     {
+      "text": "About",
+      "id": "about",
+      "subitems": [
+        {
+          "text": "About the Royal Theatre Society",
+          "url": "/about/"
+        },
+        {
+          "text": "Board & Committee Chairs",
+          "url": "/contact/"
+        }
+      ]
+    },
+    {
       "text": "Support MacTheatre",
       "id": "support-mactheatre",
       "subitems": [
@@ -9,28 +23,9 @@
           "url": " https://givebutter.com/theatrekid",
           "externalLink": "true"
         },
-
         {
-          "text": "Become a Corporate/Business Sponsor",
-          "subid": "business-sponsor",
-          "subsubitems": [
-            {
-              "text": "Season Sponsorships",
-              "url": "/season-sponsorships/"
-            },
-            {
-              "text": "Concessions Sponsorships",
-              "url": "/partnerships/#concessions-sponsorship"
-            },
-            {
-              "text": "Tech Theatre Sponsorships",
-              "url": "/partnerships/#techtheatre-sponsorship"
-            },
-            {
-              "text": "Corporate Community Investments",
-              "url": "/partnerships/#corporate-community-investment"
-            }
-          ]
+          "text": "Corporate Sponsorship",
+          "url": "/"
         },
         {
           "text": "In-Kind Contributions",
@@ -90,11 +85,6 @@
         {
           "text": "Senior Scholarship Application",
           "url": "/"
-        },
-        {
-          "text": "Royale Court Players",
-          "url": "https://mactheatre.com/thespians",
-          "externalLink": "true"
         }
       ]
     },

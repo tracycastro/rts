@@ -7,11 +7,12 @@ content %}
     </div>
     <div class="intro__content">
       <p class="intro__summary">
-        Questions or comments? We'd love to hear from you. Here is a roster of
-        RTS boardmembers and committee chairs, along with their email addresses.
+        Questions or comments? We’d love to hear from you. If you’re not sure
+        who to contact, you can send your inquiry to
+        <a href="mailto:questions@macrts.org">questions@macrts.org</a>.
       </p>
     </div>
-    <h3>RTS Board</h3>
+    <h3>Board</h3>
     <div class="contact-wrapper card-wrapper board">
       {% for contact in contactCards %} {% if contact.boardMember == "TRUE" %}
       <div class="contact-card">
@@ -25,15 +26,16 @@ content %}
       {% endif %} {% endfor %}
     </div>
     <!--.contact-wrapper-->
-    <h3>RTS Committees</h3>
+    <h3>Committee Chairs</h3>
     <div class="contact-wrapper card-wrapper">
       {% for contact in contactCards %} {% if contact.boardMember == "FALSE" %}
       <div class="contact-card">
         <h4>{{ contact.position}}</h4>
         <ul>
           <li>{{ contact.nameOne }}</li>
+          {% if contact.nameTwo %}
           <li>{{ contact.nameTwo }}</li>
-          <li>{{ contact.nameThree }}</li>
+          {% endif %}
           <li><a href="mailto:{{ contact.email }}">{{ contact.email }}</a></li>
         </ul>
       </div>
