@@ -78,12 +78,11 @@ function handleResize(e) {
     siteButtons.forEach((button) =>
       button.addEventListener('click', handleSiteButtonClick)
     );
+    // function handleLinkClick() {
+    //   location.reload();
+    // }
 
-    function handleLinkClick() {
-      location.reload();
-    }
-
-    links.forEach((link) => link.addEventListener('click', handleLinkClick));
+    // links.forEach((link) => link.addEventListener('click', handleLinkClick));
   } else {
     // console.log('It is big');
     siteSubMenus.forEach((menu) => {
