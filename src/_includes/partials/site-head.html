@@ -26,9 +26,13 @@
       >
         {{ item.text }}
       </button>
-      <ul class="dropdown__menu" aria-labelledby="{{ item.id }}">
+      <ul class="dropdown__menu here" aria-labelledby="{{ item.id }}">
         {% for subitem in item.subitems %}
+        {% if subitem.externalLink %}
+        <li><a  class="external" target="_blank" href="{{ subitem.url }}">{{ subitem.text }}</a></li>
+        {% else %}
         <li><a href="{{ subitem.url }}">{{ subitem.text }}</a></li>
+        {% endif %}
         {% endfor %}
       </ul>
       {% else %}

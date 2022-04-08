@@ -1,83 +1,81 @@
 {% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% set
 rtsItems = collections.featuredRTS %} {% block content %}
 <div class="wrapper">
-  <div class="rts-container">
-    <div class="rts-wrapper rev first-wrapper-item">
-      <img
-        class="rts-img"
-        max-witdh="300"
-        src="../images/vignette-photos/Vignette-Photo-20.jpg"
-        loading="eager"
-      />
-
-      <div class="inner">
-        <h2 class="rts__heading headline">Season Sponsorships</h2>
-        <p class="rts__summary">
-          Align your brand with MacTheatre! Sponsoring our 2022/2023 season will
-          help you gain visibility in the community and achieve your civic
-          engagement and social responsibility goals. MacTheatre sponsors are
-          essential to sustaining a high quality, tuition-free theatre program
-          and developing the next generation of performing artists in Central
-          Texas.
-        </p>
-        <p class="rts__summary">
-          Questions? Contact
-          <a href="development@macrts.org">development@macrts.org</a>
-        </p>
-      </div>
-      <!--inner-->
+  <article class="intro">
+    <div class="intro__header">
+      <h2 class="intro__heading">Season Sponsorship Packages</h2>
     </div>
-    <!--rts-wrapper-->
-  </div>
-  <!--container-->
-  <div class="rts-container">{% include "partials/sponsor-level.html" %}</div>
+    <div class="rts-container">{% include "partials/sponsor-level.html" %}</div>
+  </article>
   <div class="rts-container">
-    <div class="inner sponsor-info">
-      <h2 class="rts-levels-heading">Additional Information</h2>
+    <h3 class="intro">Additional Benefits</h3>
+    <details class="spon-details">
+      <summary>Playbill and Lobby</summary>
       <p>
-        MacTheatre produces <b>four shows</b> each season, with a combined
-        audience of <b>8,000 to 10,000 patrons</b>.
+        MacTheatre produces <b>four shows</b> each season, two musicals and two
+        plays. <b>Playbill and lobby benefits</b> are included for all shows.
+        Playbill ads can be submitted
+        <a
+          href="https://forms.gle/aimB2r8bZNuRJspq5"
+          target="_blank"
+          rel="noopener noreferrer"
+          >here</a
+        >
+        after your sponsorship purchase. Your logos and profile on the RTS
+        website will link to your company’s website. See our
+        <a href="/">home page</a> for examples.
       </p>
+    </details>
+    <details class="spon-details">
+      <summary>Promotional Emails</summary>
       <p>
-        <b>Logo/Profile Links</b> – Logos and profile pictures on the macrts.org
-        site will link to the web page of the sponsor’s choice. See our
-        <a href="/">home page</a> and our
-        <a href="/sponsors/" target="_blank">sponsor page</a> for examples.
+        Leading up to each show, <b>three promotional emails</b> are sent to
+        ~5000 continuously updated email addresses of patrons from recent shows.
+        These emails include lead producer logos. After the run of each show, a
+        <b>post-show email</b> is sent to all patrons of that show. These emails
+        include all sponsor logos.
       </p>
+    </details>
+    <details class="spon-details">
+      <summary>Social Media</summary>
       <p>
-        <b>Post-Production Emails</b> – After the run of each show, an email is
-        sent to all the patrons of the show.
-      </p>
-      <p>
-        <b>Promotional Emails</b> – Leading up to each show, three separate
-        publicity emails are sent to ~5000 continuously updated email addresses
-        of patrons from recent shows.
-      </p>
-      <p>
-        <b>Social Shout-Outs</b> – MacTheatre will provide at least two group
-        social shout-outs, one in the fall and one in the spring, that include
-        all season sponsors, on
-        <a href="https://www.facebook.com/MacTheatre" target="_blank"
+        MacTheatre will provide at least one group <b>social shout-out</b> for
+        lead producers each semester on
+        <a
+          href="https://www.facebook.com/MacTheatre"
+          target="_blank"
+          rel="noopener noreferrer"
           >Facebook</a
         >
         and/or
-        <a href="https://www.instagram.com/mactheatremfaa/" target="_blank"
+        <a
+          href="https://www.instagram.com/mactheatremfaa/"
+          target="_blank"
+          rel="noopener noreferrer"
           >Instagram</a
-        >. Shout-out design is at the discretion of MacTheatre.
+        >
+        . Shout-out design is at the discretion of MacTheatre.
       </p>
+    </details>
+    <details class="spon-details">
+      <summary>Pass Code and Tickets</summary>
       <p>
-        <b>Tickets</b> – You will receive a pass code that allows you to comp up
-        to four or eight tickets (depending on your sponsorship level) for the
-        season. The pass code may be used for tickets for any combination of
-        performances and shows, up to your ticket limit.
-      </p>
-      <p>
-        <b>Employee/Client Tickets</b> – Season sponsors may contact
+        Sponsors receive a <b>pass code</b> that allows them to comp up to four
+        or eight tickets for the season. The pass code may be used for tickets
+        for any combination of performances and shows, up to the ticket limit
+        designated by the sponsorship level. Lead producers may contact
         <a href="mailto:development@macrts.org">development@macrts.org</a> for
-        up to eight comp tickets for clients and employees for the season.
+        up to eight additional comp tickets for clients and employees throughout
+        the season.
       </p>
+    </details>
+  </div>
+  <div class="rts-container">
+    <div class="levelButton {{ item.levelName }}">
+      <a class="donate button" href="/sponsor-checkout/"
+        >Purchase Sponsorship&nbsp;→</a
+      >
     </div>
   </div>
 </div>
-{% include "partials/submit-artwork.html" %} {% include
-"partials/prefooter.html" %} {% endblock %}
+{% include "partials/prefooter.html" %} {% endblock %}

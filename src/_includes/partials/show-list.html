@@ -1,11 +1,17 @@
 <div class="rts-container">
   <h2 class="rts-levels-heading">Submission Due Dates</h2>
   <div class="date-container">
+    <p>
+      The deadline for {{ submissionType }} submissions is always two weeks
+      before opening night. The deadlines for the 2021/2022 season are as
+      follows:
+    </p>
     {% for item in deadlines.items %}
 
     <div class="show-and-date">
-      <h3 class="play-title">{{ item.showTitle }}</h3>
-      <p class="duedate">{{ item.openingNight | dateFilter }}</p>
+      <p>
+        Thu, {{ item.openingNight | dateFilter }} - <b>{{ item.showTitle }}</b>
+      </p>
     </div>
     {% endfor %}
   </div>

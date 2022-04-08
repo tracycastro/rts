@@ -1,0 +1,30 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %}{% block
+content %}
+<div class="wrapper">
+  <article class="intro">
+    <h2 class="rts-levels-heading" style="padding-top: 0">
+      {{ pageHeaderTitle }}
+    </h2>
+    <div class="calendar">
+      <iframe
+        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23c5d2fc&ctz=America%2FChicago&showTitle=0&mode=AGENDA&showNav=1&showTabs=1&showCalendars=1&src=Y19sbDF0a2F2Y2duNm92Z2VwYWNsaG9lMXA1b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%233F51B5"
+        style="border: solid 1px #777"
+        width="800"
+        height="600"
+        frameborder="0"
+        scrolling="yes"
+      ></iframe>
+    </div>
+    <p>
+      To add this calendar to your own google calendar,
+      <a
+        href="https://calendar.google.com/calendar/u/0/r?cid=Y19sbDF0a2F2Y2duNm92Z2VwYWNsaG9lMXA1b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t"
+        target="_blank"
+        rel="noopener noreferrer"
+        >click here</a
+      >
+      .
+    </p>
+  </article>
+</div>
+{% endblock %}

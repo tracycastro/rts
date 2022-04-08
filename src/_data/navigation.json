@@ -25,28 +25,15 @@
         },
         {
           "text": "Corporate Sponsorship",
-          "url": "/"
+          "url": "/corporate-sponsorship/"
         },
         {
           "text": "In-Kind Contributions",
-          "url": "/partnerships/#in-kind-contributions"
-        },
-        {
-          "text": "Amazon Smile",
-          "url": "https://smile.amazon.com/ch/87-2157644",
-          "externalLink": "true"
-        },
-        {
-          "text": "Donor Acknowledgements",
-          "url": "/donors/"
-        },
-        {
-          "text": "Sponsor Acknowledgements",
-          "url": "/sponsors/"
-        },
-        {
-          "text": "Contributor Acknowledgements",
           "url": "/in-kind-contributions/"
+        },
+        {
+          "text": "Our Supporters",
+          "url": "/our-supporters/"
         }
       ]
     },
@@ -63,8 +50,8 @@
           "url": "/tributes/"
         },
         {
-          "text": "Ad/Tribute Artwork Submission",
-          "url": "https://forms.gle/pvrJhdZrotso8Vnv5",
+          "text": "Submit Playbill Ad/Tribute Artwork",
+          "url": "https://forms.gle/aimB2r8bZNuRJspq5",
           "externalLink": "true"
         }
       ]
@@ -79,12 +66,16 @@
         },
         {
           "text": "Production Fee Scholarship Application",
-          "url": "https://docs.google.com/forms/d/e/1FAIpQLSd-NLg01yZ6NRFcMpP62dcFfDU3Dcd-MkGjqQUuV5g2pGpKAw/viewform",
-          "externalLink": "true"
+          "url": "/production-fee-scholarship/"
         },
         {
           "text": "Senior Scholarship Application",
-          "url": "/"
+          "url": "/senior-scholarship/"
+        },
+        {
+          "text": "Texas Thespian Festival",
+          "url": "https://mactheatre.com/texas-thespian-festival",
+          "externalLink": "true"
         }
       ]
     },
@@ -102,8 +93,7 @@
         },
         {
           "text": "Calendar",
-          "url": "https://calendar.google.com/calendar/u/0?cid=Y19sbDF0a2F2Y2duNm92Z2VwYWNsaG9lMXA1b0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t",
-          "externalLink": "true"
+          "url": "/calendar/"
         },
         {
           "text": "Google Group",

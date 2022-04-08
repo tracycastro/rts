@@ -29,11 +29,10 @@
       "adExampleImg": "/images/quarter-page-ad-example.svg",
       "adDimension": "vertical",
       "tribute": "$25",
-      "tributeLink": "https://buy.stripe.com/test_aEUdS1cc87uP0wgeUU",
+      "tributeLink": "https://buy.stripe.com/8wMbIV1eH80papG8wx",
       "businessAd": "$50",
-      "businessLink": "https://buy.stripe.com/test_dR68xHdgc16r5QA003",
-      "adImage": "/images/quarter-icon.svg",
-      "buttonLink": "https://buy.stripe.com/test_3cseV5gIUdjw4pOaEF"
+      "businessLink": "https://buy.stripe.com/00gfZbg9B5Sh9lC3cg",
+      "adImage": "/images/quarter-icon.svg"
     },
     {
       "levelName": "platinum",
@@ -48,11 +47,10 @@
       "adExampleImg": "/images/half-page-ad-example.svg",
       "adDimension": "horizontal",
       "tribute": "$50",
-      "tributeLink": "https://buy.stripe.com/test_9AQ29jekgdTd1AkeUV",
+      "tributeLink": "https://buy.stripe.com/fZe8wJe1t6WlapG9AC",
       "businessAd": "$100",
-      "businessLink": "https://buy.stripe.com/test_7sIeW52By7uPgvedQU",
-      "adImage": "/images/half-icon.svg",
-      "buttonLink": "https://buy.stripe.com/test_3cseV5gIUdjw4pOaEF"
+      "businessLink": "https://buy.stripe.com/4gw8wJ0aD3K92XeeUZ",
+      "adImage": "/images/half-icon.svg"
     },
     {
       "levelName": "diamond",
@@ -67,11 +65,10 @@
       "adExampleImg": "/images/full-page-ad-example.svg",
       "adDimension": "full page horizontal",
       "tribute": "$100",
-      "tributeLink": "https://buy.stripe.com/test_00g7tDgsoaH1a6Q6oq",
+      "tributeLink": "https://buy.stripe.com/5kA14h3mPcgF69q5kn",
       "businessAd": "$150",
-      "businessLink": "https://buy.stripe.com/test_5kA3dncc8eXhgve3ch",
-      "adImage": "/images/full-icon.svg",
-      "buttonLink": "https://buy.stripe.com/test_3cs14f1O0bbo2hGdQT"
+      "businessLink": "https://buy.stripe.com/bIYaER2iLa8x0P69AG",
+      "adImage": "/images/full-icon.svg"
     }
   ]
 }

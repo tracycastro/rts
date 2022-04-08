@@ -1,7 +1,7 @@
 {
   "items": [
     {
-      "levelName": "production",
+      "levelName": "associate",
       "price": "$500",
       "backOfPlaybill": "true",
       "adInPlaybill": "half page",
@@ -15,7 +15,7 @@
       "freeTickets": "4"
     },
     {
-      "levelName": "season",
+      "levelName": "lead",
       "price": "$1000",
       "backOfPlaybill": "true",
       "adInPlaybill": "full page",

@@ -1,0 +1,87 @@
+<article class="intro">
+  <div class="intro__header">
+    <div class="intro__header">
+      <h2 class="intro__heading">Individual Donors</h2>
+    </div>
+  </div>
+</article>
+<div class="donor-level-container">
+  <div class="level">
+    <h3>Diamond Level</h3>
+  </div>
+  <div class="donor-wrapper">
+    {% for donor in donors %} {% if donor.level == "Diamond" %}
+    <div class="donor-container">
+      <ul>
+        <li>{{ donor.name }}</li>
+      </ul>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+  <!--.donor-wrapper-->
+</div>
+<!--donor-level-container-->
+<div class="donor-level-container">
+  <div class="level">
+    <h3>Platinum Level</h3>
+  </div>
+  <div class="donor-wrapper">
+    {% for donor in donors %} {% if donor.level == "Platinum" %}
+    <div class="donor-container">
+      <ul>
+        <li>{{ donor.name }}</li>
+      </ul>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+  <!--.donor-wrapper-->
+</div>
+<!--donor-level-container-->
+<div class="donor-level-container">
+  <div class="level">
+    <h3>Gold Level</h3>
+  </div>
+  <div class="donor-wrapper">
+    {% for donor in donors %} {% if donor.level == "Gold" %}
+    <div class="donor-container">
+      <ul>
+        <li>{{ donor.name }}</li>
+      </ul>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+  <!--.donor-wrapper-->
+</div>
+<!--donor-level-container-->
+<div class="donor-level-container">
+  <div class="level">
+    <h3>Silver Level</h3>
+  </div>
+  <div class="donor-wrapper">
+    {% for donor in donors %} {% if donor.level == "Silver" %}
+    <div class="donor-container">
+      <ul>
+        <li>{{ donor.name }}</li>
+      </ul>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+  <!--.donor-wrapper-->
+</div>
+<!--donor-level-container-->
+<div class="donor-level-container last">
+  <div class="level">
+    <h3>Bronze Level</h3>
+  </div>
+  <div class="donor-wrapper donor-bronze">
+    {% for donor in donors %} {% if donor.level == "Bronze" %}
+    <div class="donor-container">
+      <ul>
+        <li>{{ donor.name }}</li>
+      </ul>
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+  <!--.donor-wrapper-->
+</div>
+<!--donor-level-container-->

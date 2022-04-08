@@ -13,15 +13,14 @@ rtsItems = collections.featuredRTS2 %} {% block content %}
 
       <div class="inner">
         <h2 class="rts__heading headline">{{ item.data.title }}</h2>
+        <h2 class="rts__heading headline">(Cast & Crew Recognition)</h2>
         <p class="rts__summary">
-          {{ item.data.explainer }} Lookng to advertise your business?
-          <a href="/business-ads/">Click here!</a>
+          {{ item.data.explainer }}</a>
         </p>
-        <p class="rts__summary">{{ item.data.summary }}</p>
-        <p class="rts__summary">{{ item.data.body }}</p>
+        <p class="rts__summary">Tributes are playbill ads that can be used only for cast and crew recognition. They may not be used to advertise businesses. Looking to advertise your business? <a href="/business-ads/">Click here!</a></p>
         <p class="rts__summary">
           Questions? Contact
-          <a href="mailto:playbill@macrts.org">playbill@macrts.org</a>
+          <a href="mailto:ads@macrts.org">ads@macrts.org</a>
         </p>
       </div>
       <!--inner-->
@@ -29,7 +28,7 @@ rtsItems = collections.featuredRTS2 %} {% block content %}
     <!--wrapper-->
     {% endfor %}
   </div>
-  {% include "partials/show-list.html" %} {% include
+  {% set submissionType = "playbill tribute" %}{% include "partials/show-list.html" %}   {% include
   "partials/specifications.html" %}{% include "partials/submit-artwork.html" %}
 </div>
 {% include "partials/prefooter.html" %} {% endblock %}

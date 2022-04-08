@@ -1,0 +1,27 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content%}
+<div class="wrapper">
+  <article class="intro">
+    <div class="intro__header">
+      <h3 class="brand-secondary">
+        Thank you to all of the individuals and businesses that supported
+        MacTheatre’s 2021/2022 season!
+      </h3>
+    </div>
+  </article>
+  {% include "partials/individual-donors.html" %}
+  <article class="intro" id="business-sponsors">
+    <div class="intro__header">
+      <div class="intro__header">
+        <h2 class="intro__heading">Business Sponsors</h2>
+      </div>
+    </div>
+    {% include "partials/sponsor-logos.html" %}
+  </article>
+
+  <article class="intro" id="in-kind-donors">
+    {% include "partials/in-kind-grid.html" %}
+  </article>
+</div>
+<!--.wrapper-->
+{% include "partials/prefooter.html" %} {% endblock %}

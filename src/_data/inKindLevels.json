@@ -32,17 +32,6 @@
       ]
     },
     {
-      "level": "Lawncare",
-      "tag": "Thank you for the landscaping services",
-      "levelItems": [
-        {
-          "sponsor": "Emerald Lawns",
-          "url": "https://emeraldlawns.com/",
-          "logo": "../images/in-kind-logos/Emerald-Lawns.jpg"
-        }
-      ]
-    },
-    {
       "level": "Printing",
       "tag": "Thank you for your generous gift of printing services for our playbills and posters",
       "levelItems": [

@@ -13,15 +13,14 @@ rtsItems = collections.featuredRTS3 %} {% block content %}
 
       <div class="inner">
         <h2 class="rts__heading headline">{{ item.data.title }}</h2>
+        <p class="rts__summary">{{ item.data.explainer }}</p>
         <p class="rts__summary">
-          {{ item.data.explainer }} Lookng to buy a tribute for a student?
-          <a href="/tributes/">Click here!</a>
+          If you want to purchase a cast and crew tribute to congratulate or
+          support someone in the show, <a href="/tributes/">click here</a>!
         </p>
-        <p class="rts__summary">{{ item.data.summary }}</p>
-        <p class="rts__summary">{{ item.data.body }}</p>
         <p class="rts__summary">
           Questions? Contact
-          <a href="mailto:playbill@macrts.org">playbill@macrts.org</a>
+          <a href="mailto:ads@macrts.org">ads@macrts.org</a>
         </p>
       </div>
       <!--inner-->
@@ -29,13 +28,14 @@ rtsItems = collections.featuredRTS3 %} {% block content %}
     <!--wrapper-->
     {% endfor %}
   </div>
-  {% include "partials/show-list.html" %}
+  {% set submissionType = "ad" %} {% include "partials/show-list.html" %}
   <div class="rts-container">
     <h2 class="rts-levels-heading">Business Ad Specifications</h2>
     <p style="text-align: center">
-      Looking for ad ideas and inspiration? Check out a copy of a recent
-      playbill
-      <a href="/">here</a>!
+      Looking for ad ideas and inspiration? Check out a copy of a
+      <a href="/images/pdf/Spongebob-Playbill.pdf" target="_blank"
+        >recent playbill</a
+      >!
     </p>
     <div class="ad-spec-container">
       {% for item in levels.items %} {% if item.adSize %}
@@ -59,7 +59,10 @@ rtsItems = collections.featuredRTS3 %} {% block content %}
     <!--.ad-spec-container-->
   </div>
   <!--.rts-container-->
-
+  <p>
+    The deadline for playbill ad submissions is always two weeks before opening
+    night. The deadlines for the 2021/2022 season are as follows:
+  </p>
   {% include "partials/submit-artwork.html" %}
 </div>
 {% include "partials/prefooter.html" %} {% endblock %}
