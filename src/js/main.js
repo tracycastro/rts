@@ -51,12 +51,6 @@ const siteSubMenus = Array.from(siteNav.querySelectorAll('.dropdown__menu'));
 const tests = Array.from(document.querySelectorAll('.here'));
 const links = document.querySelectorAll('.external');
 
-function handleLinkClick() {
-  location.reload();
-}
-
-links.forEach((link) => link.addEventListener('click', handleLinkClick));
-
 function handleResize(e) {
   // Check if the media query is true
 
@@ -84,6 +78,12 @@ function handleResize(e) {
     siteButtons.forEach((button) =>
       button.addEventListener('click', handleSiteButtonClick)
     );
+
+    function handleLinkClick() {
+      location.reload();
+    }
+
+    links.forEach((link) => link.addEventListener('click', handleLinkClick));
   } else {
     // console.log('It is big');
     siteSubMenus.forEach((menu) => {
