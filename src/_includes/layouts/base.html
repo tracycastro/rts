@@ -9,9 +9,15 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ title }}</title>
-    <link rel="icon" type="image/jpg" href="/images/rts-favicon.png" />
+    <style>
+      html {
+        visibility: hidden;
+        opacity: 0;
+      }
+    </style>
     <link rel="stylesheet" href="../css/normalize.css" media="screen" />
     <link rel="stylesheet" href="../css/styles.css" media="screen" />
+    <link rel="icon" type="image/jpg" href="/images/rts-favicon.png" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/flickity@2/dist/flickity.min.css"
@@ -34,9 +40,10 @@
     </main>
     <footer>{% include "partials/footer.html" %}</footer>
     <!-- <script src="/js/form-validation.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+
     <script src="/js/main.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
     <!-- <script src="https://unpkg.com/flickity-fade@1/flickity-fade.js"></script> -->
     <!-- Givebutter Elements -->
     <script>
@@ -46,8 +53,8 @@
           (Givebutter.q = Givebutter.q || []).push(arguments);
         };
       Givebutter.l = +new Date();
-      window.Givebutter("setOptions", {
-        accountId: "KPe1bwjukkF16tMN",
+      window.Givebutter('setOptions', {
+        accountId: 'KPe1bwjukkF16tMN',
       });
     </script>
     <script async src="https://js.givebutter.com/elements/latest.js"></script>

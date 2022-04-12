@@ -1436,3 +1436,8 @@ article#business-sponsors,
 article#in-kind-donors {
   scroll-margin-top: 5em;
 }
+
+html {
+  visibility: visible;
+  opacity: 1;
+}
