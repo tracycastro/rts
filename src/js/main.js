@@ -22,49 +22,61 @@ if (
   // console.log('here is confetti!');
 }
 
-if (
-  window.location.pathname == '/tributes/' ||
-  window.location.pathname == '/business-ads/' ||
-  window.location.pathname == '/headshots-bios/'
-) {
-  // console.log("i'm here");
+// if (
+//   window.location.pathname == '/tributes/' ||
+//   window.location.pathname == '/business-ads/' ||
+//   window.location.pathname == '/headshots-bios/'
+// ) {
+// console.log("i'm here");
 
-  const duedatePara = document.querySelectorAll('.duedate');
+// const duedatePara = document.querySelectorAll('.duedate');
 
-  const playTitle = document.querySelector('.duedate').previousElementSibling;
+// const playTitle = document.querySelector('.duedate').previousElementSibling;
 
-  duedatePara.forEach((duedatePara) => {
-    const duedate = duedatePara.innerHTML;
-    const duedateDate = new Date(duedate);
-    const now = new Date();
-    if (now > duedateDate) {
-      duedatePara.classList.add('faded');
-      duedatePara.previousElementSibling.classList.add('faded');
-    }
-  });
-}
+// duedatePara.forEach((duedatePara) => {
+//   const duedate = duedatePara.innerHTML;
+//   const duedateDate = new Date(duedate);
+//   const now = new Date();
+//   if (now > duedateDate) {
+//     duedatePara.classList.add('faded');
+//     duedatePara.previousElementSibling.classList.add('faded');
+//   }
+// });
+// }
 
 const mQuery = window.matchMedia('(max-width: 768px)');
 const siteNav = document.querySelector('.site-head__nav');
 const siteButtons = siteNav.querySelectorAll('[type="button"]');
 const siteSubMenus = Array.from(siteNav.querySelectorAll('.dropdown__menu'));
 const tests = Array.from(document.querySelectorAll('.here'));
-const links = document.querySelectorAll('.external');
+const links = Array.from(document.querySelectorAll('.external'));
+const lidrop = siteNav.querySelector('.dropdown');
 
 function handleResize(e) {
   // Check if the media query is true
 
   if (e.matches) {
     // console.log('It is small');
+    function handleSmallLinkClick(event) {
+      console.log('external link was clicked');
+      siteSubMenus.forEach((menu) => {
+        menu.hidden = true;
+      });
+    }
+
+    links.forEach((link) =>
+      link.addEventListener('click', handleSmallLinkClick)
+    );
+
     siteSubMenus.forEach((menu) => {
       menu.hidden = true;
     });
     function handleSiteButtonClick(event) {
-      event.preventDefault();
       siteButtons.forEach((button) => {
         button.setAttribute('aria-expanded', false);
       });
       event.currentTarget.setAttribute('aria-expanded', true);
+      event.stopPropagation();
       const { id } = event.currentTarget;
       const siteSubMenu = siteSubMenus.find(
         (menu) => menu.getAttribute('aria-labelledby') === id
@@ -78,18 +90,23 @@ function handleResize(e) {
     siteButtons.forEach((button) =>
       button.addEventListener('click', handleSiteButtonClick)
     );
-    // function handleLinkClick() {
-    //   location.reload();
-    // }
-
-    // links.forEach((link) => link.addEventListener('click', handleLinkClick));
   } else {
-    // console.log('It is big');
+    console.log('It is big');
+    function handleBigLinkClick(event) {
+      location.reload();
+    }
+
+    links.forEach((link) => link.addEventListener('click', handleBigLinkClick));
+
     siteSubMenus.forEach((menu) => {
       menu.hidden = false;
     });
   }
 }
-
 handleResize(mQuery);
 mQuery.addEventListener('change', handleResize);
+
+focusMethod = function getFocus() {
+  siteNav.focus();
+  console.log('yeah it clicked');
+};
