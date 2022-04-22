@@ -7,12 +7,9 @@
       follows:
     </p>
     {% for item in deadlines.items %}
-
-    <div class="show-and-date">
-      <p>
-        Thu, {{ item.openingNight | dateFilter }} - <b>{{ item.showTitle }}</b>
-      </p>
-    </div>
+    <p>
+      Thu, {{ item.openingNight | dateFilter }} - <b>{{ item.showTitle }}</b>
+    </p>
     {% endfor %}
   </div>
   <!--.date-container-->

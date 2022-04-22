@@ -1,0 +1,219 @@
+/**
+ * Initial state, hidden off screen
+ */
+.clicky-menu ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  visibility: hidden; /*[1]*/
+}
+
+/**
+ * No JS fallback
+ *
+ * Triggers menus on hover rather than click. Supports keyboard navigation in modern browsers.
+ */
+.clicky-menu.no-js li:hover > ul {
+  visibility: visible;
+}
+.clicky-menu.no-js li:focus-within > ul {
+  /*[2]*/
+  visibility: visible;
+}
+
+/**
+ * Open/Close Menu Behavior with JS
+ */
+.clicky-menu ul[aria-hidden='false'] {
+  visibility: visible;
+}
+
+/* Prevent offscreen-submenus */
+.clicky-menu .sub-menu--right {
+  left: auto !important;
+  right: 0 !important;
+}
+
+/**
+ * Footnotes
+ *
+ * [1] Using visibility instead of display allows for easier transitions and animation of submenus
+ * [2] Must be a separate ruleset so that hover works in non-modern browsers
+ */
+
+.clicky-menu {
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-block-end: 1rem;
+}
+@media (min-width: 1000px) {
+  .clicky-menu {
+    display: flex;
+  }
+}
+.clicky-menu a,
+.clicky-menu button {
+  padding: 1em;
+  background: transparent;
+  color: var(--brand);
+  font-weight: bold;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.clicky-menu a:hover,
+.clicky-menu button:hover {
+  color: var(--secondary-brand);
+}
+.clicky-menu button:hover svg {
+  stroke: var(--secondary-brand);
+}
+.clicky-menu li > ul > li > a:hover {
+  background-color: var(--brand);
+  color: var(--white);
+}
+@media (min-width: 1000px) {
+  .clicky-menu a:focus,
+  .clicky-menu button:focus {
+    outline: 0.125em dotted var(--brand);
+    outline-offset: -0.125em;
+  }
+  .clicky-menu ul a:focus {
+    outline: 0.125em dotted var(--white);
+  }
+}
+
+/* Top Level Items */
+.clicky-menu > li {
+  position: relative;
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: stretch;
+  flex-wrap: wrap;
+}
+
+.clicky-menu > li > a,
+.clicky-menu > li > button {
+  flex: 1 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 0;
+  font-size: 0.95rem;
+  font-weight: inherit;
+  cursor: pointer;
+  justify-content: center;
+  letter-spacing: normal;
+}
+@media (min-width: 1000px) {
+  .clicky-menu > li > a,
+  .clicky-menu > li > button {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+/* Icon */
+.clicky-menu svg {
+  width: 1em;
+  height: 1em;
+  margin-left: 0.2em;
+  stroke: var(--brand);
+}
+
+.clicky-menu [aria-expanded='true'] svg {
+  transform: scaleY(-1);
+}
+svg[hidden] {
+  display: none;
+  position: absolute;
+}
+
+/* Submenu Styles */
+.clicky-menu ul {
+  width: 12em;
+  margin-top: 0.25em;
+  list-style: none;
+  border-radius: 5px;
+  background-color: var(--secondary-brand);
+  color: var(--white);
+  border-radius: 4px;
+  box-shadow: 0 0.15em 0.25em rgb(0 0 0 / 25%);
+  padding: 0.5em 0;
+  min-width: 20ch;
+}
+
+/* Responsive Submenu Behavior */
+.clicky-menu ul[aria-hidden='false'] {
+  position: static;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+@media (min-width: 1000px) {
+  .clicky-menu ul[aria-hidden='false'] {
+    position: absolute;
+    width: auto;
+  }
+}
+
+/* Submenu Links */
+.clicky-menu ul a {
+  display: block;
+  padding: 2em;
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: var(--white);
+  text-align: center;
+}
+@media (min-width: 1000px) {
+  .clicky-menu ul a {
+    white-space: nowrap;
+    display: block;
+    padding: 1em;
+    font-size: 0.9rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1000px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media (max-width: 999px) {
+  .clicky-menu {
+    display: none;
+  }
+  .clicky-menu.show {
+    display: block;
+  }
+  .hamburger {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    fill: var(--brand);
+    padding-block-end: 1rem;
+  }
+  .hamburger span {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-inline-start: 0.3rem;
+    text-transform: uppercase;
+  }
+  .hamburger:hover,
+  .hamburger:hover svg {
+    color: var(--secondary-brand);
+    fill: var(--secondary-brand);
+    cursor: pointer;
+  }
+}

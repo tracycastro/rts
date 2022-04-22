@@ -5,7 +5,7 @@
       "id": "about",
       "subitems": [
         {
-          "text": "About the Royal Theatre Society",
+          "text": "About the Royale Theatre Society",
           "url": "/about/"
         },
         {
@@ -62,15 +62,12 @@
       "subitems": [
         {
           "text": "Headshot & Bio Submission",
-          "url": "/headshots-bios/"
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLSeFRfWznx3zLcyiEDZENg0RpP3qa1FjXeuehmWh4UA_ld6piA/viewform",
+          "externalLink": "true"
         },
         {
-          "text": "Production Fee Scholarship Application",
-          "url": "/production-fee-scholarship/"
-        },
-        {
-          "text": "Senior Scholarship Application",
-          "url": "/senior-scholarship/"
+          "text": "Scholarships",
+          "url": "/scholarships/"
         },
         {
           "text": "Texas Thespian Festival",

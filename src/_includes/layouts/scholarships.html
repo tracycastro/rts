@@ -1,0 +1,66 @@
+{% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
+content %}
+<div class="wrapper">
+  <article class="intro home">
+    <div class="intro__header">
+      <h1 class="intro__heading">{{ pageHeaderTitle }}</h1>
+    </div>
+    <div class="intro__content">
+      <p class="intro__summary">
+        MacTheatre and the Royale Theatre Society believe that all students,
+        regardless of their financial circumstances, should have access to high
+        quality theatre productions and programs. No student will be prevented
+        from participating in theatre because of an inability to pay.
+      </p>
+    </div>
+    <!--intro-content-->
+  </article>
+  <hr />
+  <div class="rts-container">
+    <div class="rts-wrapper">
+      <img
+        class="rts-img"
+        max-witdh="300"
+        src="../images/vignette-photos/Vignette-Photo-5.jpg"
+        loading="eager"
+      />
+      <div class="inner">
+        <h2 class="rts__heading headline">Production Fee Scholarships</h2>
+        <p class="rts__summary">
+          Production Fees (also known as Fair Share Fees) are annual fees that
+          are required of all performance theatre majors, technical theatre
+          majors, musical certificate students, and any other student
+          participating in a production. Learn More.
+        </p>
+        <p class="rts__summary">
+          If you would like to request a scholarship to cover the cost of your
+          production fees, please fill out the application below. Applications
+          are kept confidential and are seen only by the RTS Scholarships
+          Committee chair.
+        </p>
+      </div>
+      <!--inner-->
+    </div>
+    <hr />
+    <div class="rts-wrapper first-wrapper-item rev">
+      <img
+        class="rts-img"
+        max-witdh="300"
+        src="../images/vignette-photos/Vignette-Photo-12.jpg"
+        loading="lazy"
+      />
+      <div class="inner">
+        <h2 class="rts__heading headline">Senior Scholarships</h2>
+        <p class="rts__summary">
+          The Royale Theatre Society provides partial scholarships to seniors
+          who have participated in MacTheatre during their time at McCallum. To
+          request an application for a scholarship, please contact our
+          scholarships committee chair at
+          <a href="mailto:scholarships@macrts.org">scholarships@macrts.org</a>.
+        </p>
+      </div>
+      <!--inner-->
+    </div>
+  </div>
+</div>
+{% include "partials/prefooter.html" %} {% endblock %}

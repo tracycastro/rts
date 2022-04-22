@@ -13,23 +13,27 @@
     </div>
   </div>
 </header>
-<nav class="nav site-head__nav" aria-label="Primary">
-  <ul class="nav__list">
+<svg xmlns="http://www.w3.org/2000/svg"  hidden>
+	<symbol id="arrow" viewbox="0 0 16 16" >
+		<polyline points="4 6, 8 10, 12 6"  stroke-width="2" fill="transparent" stroke-linecap="round" />
+	</symbol>
+</svg>
+<nav id="primary-nav"class="site-navigation">
+  <div class="hamburger">
+  <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="32" height="32" style="enable-background:new 0 0 32 32">
+    <path d="M4 10h24c1.104 0 2-.896 2-2s-.896-2-2-2H4c-1.104 0-2 .896-2 2s.896 2 2 2zm24 4H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2zm0 8H4c-1.104 0-2 .896-2 2s.896 2 2 2h24c1.104 0 2-.896 2-2s-.896-2-2-2z"/>
+  </svg><span></span>
+</div>
+  <ul class="clicky-menu no-js">
     {% for item in navigation.items %} {% if item.subitems.length > 0 %}
-    <li class="dropdown">
-      <button
-        type="button"
-        class="dropdown__title"
-        aria-expanded="false"
-        aria-controls="primary-dropdown"
-        id="{{ item.id }}"
-      >
-        {{ item.text }}
-      </button>
-      <ul class="dropdown__menu here" aria-labelledby="{{ item.id }}">
+    <li>
+      <a href="#"> {{ item.text }} <svg aria-hidden="true" width="16" height="16">
+        <use xlink:href="#arrow" />
+      </svg></a>
+      <ul class="sub-menu">
         {% for subitem in item.subitems %}
         {% if subitem.externalLink %}
-        <li><a  class="external" target="_blank" href="{{ subitem.url }}">{{ subitem.text }}</a></li>
+        <li><a  target="_blank" href="{{ subitem.url }}">{{ subitem.text }}</a></li>
         {% else %}
         <li><a href="{{ subitem.url }}">{{ subitem.text }}</a></li>
         {% endif %}
@@ -42,3 +46,4 @@
     {% endfor %}
   </ul>
 </nav>
+

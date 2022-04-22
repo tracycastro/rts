@@ -1,6 +1,27 @@
 {% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
 content %}
 <div class="wrapper">
+  <article class="intro home">
+    <div class="intro__header">
+      <h1 class="intro__heading">{{ pageHeaderTitle }}</h1>
+    </div>
+    <div class="intro__content">
+      <p class="intro__summary">
+        Support MacTheatre and get to know the other Royale Theatre Society
+        parents. It’s fun, requires very little time, and volunteers get
+        <b>free seats</b> to the performances at which they volunteer.
+        On-the-job training, no experience required!
+      </p>
+      <p class="intro__summary">
+        The next opportunity to volunteer for a show will be for
+        <a href="https://mactheatre.com/eurydice" target="_blank">Eurydice</a
+        >, which runs May 12, 2022&nbsp;–&nbsp;May 15, 2022. Once that sign-up list is
+        available, we will post it here.
+      </p>
+    </div>
+    <!--intro-content-->
+  </article>
+  <hr />
   <div class="rts-container">
     <div class="rts-wrapper first-wrapper-item">
       <img
@@ -10,34 +31,6 @@ content %}
         width="300"
         height="300"
         loading="eager"
-      />
-      <div class="inner">
-        <h2 class="rts__heading">{{ title }}</h2>
-        <p class="rts__summary">
-          Support MacTheatre and get to know the other Royale Theatre Society
-          parents. It’s fun, requires very little time, and volunteers get
-          <b>free seats</b> to the performances at which they volunteer.
-          On-the-job training, no experience required!
-        </p>
-        <p class="rts__summary">
-          The next opportunity to volunteer for a show will be for
-          <a href="https://mactheatre.com/eurydice" target="_blank">Eurydice</a
-          >, which runs May 12, 2022 – May 15, 2022. Once that sign-up list is
-          available, we will post it here.
-        </p>
-      </div>
-      <!--inner-->
-
-      <!--.rts-container-->
-    </div>
-    <div class="rts-wrapper rev">
-      <img
-        class="rts-img"
-        max-witdh="300"
-        src="../images/vignette-photos/Vignette-Photo-4.jpg"
-        width="300"
-        height="300"
-        loading="lazy"
       />
       <div class="inner">
         <h2 class="rts__heading">Typical Volunteer Jobs for MacTheatre</h2>
@@ -56,7 +49,8 @@ content %}
         </div>
       </div>
     </div>
-    <div class="rts-wrapper">
+    <hr>
+    <div class="rts-wrapper rev">
       <img
       class="rts-img"
       max-witdh="300"

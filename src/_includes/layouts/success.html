@@ -1,29 +1,35 @@
 {% extends "layouts/base.html" %} {% set pageHeaderTitle = title %} {% block
 content %}
 <div class="wrapper">
-  <article class="intro">
-    <div class="intro__header">
-      <h2 class="intro__heading">Thank you for supporting MacTheatre!</h2>
-    </div>
-    <div class="intro__content">
-      <p class="intro__summary">
-        Now that you have purchased an ad or tribute, just use the button below
-        to submit your artwork. Not ready to submit yet? That’s OK! You can
-        always come back later and use the
+  <div class="rts-container">
+    <div class="rts-wrapper first-wrapper-item">
+      <img
+        class="rts-img"
+        max-witdh="300"
+        loading="eager"
+        src="../images/vignette-photos/Vignette-Photo-2.jpg"
+      />
+      <div class="inner">
+        <h1 class="rts__heading headline">
+          Thank you for Supporting MacTheatre
+        </h1>
+        <p class="rts__summary">
+          Now that you have purchased an ad or tribute, just use the button
+          below to submit your artwork. Not ready to submit yet? That’s OK! You
+          can always come back later and use the
+          <b>Submit Playbill Ad/Tribute Artwork</b>
+          link in our menu to get to the submission form.
+        </p>
         <a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSdXiFoO-NkI8EsLbTaLBM4UkvmmYYabSVWO9ggqzb9-AmNK3A/closedform"
-          target="blank"
-        ></a>
-        AD/TRIBUTE ARTWORK SUBMISSION link in our menu to get to the submission
-        form.
-      </p>
-      <a
-        href="https://docs.google.com/forms/d/e/1FAIpQLSdXiFoO-NkI8EsLbTaLBM4UkvmmYYabSVWO9ggqzb9-AmNK3A/closedform"
-        target="-blank"
-        class="button"
-        >Submit Artwork →</a
-      >
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfvRusvkRG4Vy6oHSRKBKubD0a23cbuI-lCUc7g7UKab1rkGA/viewform"
+          target="-blank"
+          class="button"
+          >Submit Artwork →</a
+        >
+      </div>
+      <!--inner-->
     </div>
-  </article>
+    <!--wrapper-->
+  </div>
 </div>
 {% include "partials/prefooter.html" %} {% endblock %}
