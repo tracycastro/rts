@@ -648,6 +648,9 @@ a.social-nav__button:hover {
   justify-content: center;
   scroll-margin-top: 5em;
 }
+.rts-wrapper.start {
+  align-items: start;
+}
 
 .gb-wrapper {
   display: grid;
@@ -814,6 +817,22 @@ ul.list {
   margin-block-end: 1rem;
   padding-inline-start: 2rem;
   margin-inline: auto;
+}
+ul.producer {
+  list-style: none;
+  padding-inline-start: 0;
+  padding-block-start: 1rem;
+  margin-inline: unset;
+  margin-inline-start: 16px;
+}
+ul.producer li::marker {
+  content: '✓';
+  padding-inline-end: 0.5rem;
+  color: var(--secondary-brand);
+}
+ul.producer li {
+  padding-block: 0.5rem;
+  padding-inline-start: 0.25rem;
 }
 .rts-levels-heading {
   text-align: center;
