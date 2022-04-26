@@ -665,7 +665,7 @@ a.social-nav__button:hover {
 @media (max-width: 1200px) {
   .gb-wrapper {
     grid-template-columns: 100%;
-    justify-items: stretch;
+    grid-auto-flow: row;
   }
 }
 .align-top {
@@ -1534,7 +1534,7 @@ article#in-kind-donors {
   }
 }
 
-@supports not (column-gap: 2rem) {
+@supports not (gap: 2rem) {
   .rts-wrapper > * {
     padding-right: 2rem;
   }
