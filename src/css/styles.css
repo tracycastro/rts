@@ -826,7 +826,7 @@ ul.producer {
   margin-inline-start: 16px;
 }
 ul.producer li::marker {
-  content: '✓';
+  content: '\2713';
   padding-inline-end: 0.5rem;
   color: var(--secondary-brand);
 }
