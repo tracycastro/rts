@@ -19,5 +19,4 @@ if (
     origin: { y: 0.6 },
     disableForReducedMotion: true,
   });
-  console.log('here is confetti!');
 }
