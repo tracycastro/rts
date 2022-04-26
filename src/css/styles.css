@@ -825,7 +825,8 @@ ul.producer {
   margin-inline: unset;
   margin-inline-start: 16px;
 }
-ul.producer li::marker {
+ul.producer li::marker,
+li::before {
   content: '\2713';
   padding-inline-end: 0.5rem;
   color: var(--secondary-brand);
