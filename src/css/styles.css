@@ -147,6 +147,7 @@ hr {
 h1 {
   font-size: 2.75rem;
   line-height: 1.25;
+  -webkit-padding-after: 0.5rem;
   padding-block-end: 0.5rem;
 }
 h2 {
@@ -675,6 +676,7 @@ a.social-nav__button:hover {
   padding-top: 0;
 } */
 .rts-wrapper:last-of-type {
+  -webkit-padding-after: 1.5rem;
   padding-block-end: 1.5rem;
 }
 
@@ -721,6 +723,7 @@ a.social-nav__button:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  -moz-column-gap: 2rem;
   column-gap: 2rem;
   row-gap: 3rem;
   align-content: center;
@@ -728,6 +731,7 @@ a.social-nav__button:hover {
   border-bottom: 2px solid var(--lightest-brand);
 }
 .sponsor-logos-container.in-kind {
+  -moz-column-gap: 2rem;
   column-gap: 2rem;
   flex-wrap: nowrap;
 }
@@ -819,23 +823,29 @@ ul.list {
   max-width: 100ch;
   -webkit-margin-after: 1rem;
   margin-block-end: 1rem;
+  -webkit-padding-start: 2rem;
   padding-inline-start: 2rem;
   margin-inline: auto;
 }
 ul.producer {
   list-style: none;
+  -webkit-padding-start: 0;
   padding-inline-start: 0;
+  -webkit-padding-before: 1rem;
   padding-block-start: 1rem;
   margin-inline: unset;
+  -webkit-margin-start: 16px;
   margin-inline-start: 16px;
   list-style-type: '\2713';
 }
 ul.producer li::marker {
+  -webkit-padding-end: 0.5rem;
   padding-inline-end: 0.5rem;
   color: var(--secondary-brand);
 }
 ul.producer li {
   padding-block: 0.5rem;
+  -webkit-padding-start: 0.25rem;
   padding-inline-start: 0.25rem;
 }
 .rts-levels-heading {
@@ -1422,6 +1432,7 @@ p.item-price {
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   justify-items: center;
+  -moz-column-gap: unset;
   column-gap: unset;
   row-gap: 0.5em;
   padding: 0.5rem 0;
@@ -1430,6 +1441,7 @@ p.item-price {
 .donor-level-container {
   -webkit-border-after: 1px solid var(--lightest-brand);
   border-block-end: 1px solid var(--lightest-brand);
+  -webkit-padding-after: 1rem;
   padding-block-end: 1rem;
 }
 
@@ -1455,6 +1467,7 @@ p.item-price {
 .contact-wrapper.card-wrapper {
   max-width: 150ch;
   grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 2rem;
   column-gap: 2rem;
 }
 .contact-wrapper.card-wrapper.board {
@@ -1513,6 +1526,18 @@ p.item-price {
 article#business-sponsors,
 article#in-kind-donors {
   scroll-margin-top: 5em;
+}
+
+@supports not (column-gap: 2rem) {
+  .social-nav > * {
+    padding-right: 2rem;
+  }
+}
+
+@supports not (column-gap: 2rem) {
+  .rts-wrapper > * {
+    padding-right: 2rem;
+  }
 }
 
 html {
