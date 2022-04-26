@@ -76,10 +76,6 @@ details,
   -ms-hyphenate-limit-last: always;
   -ms-hyphenate-limit-zone: 8%;
   hyphens: auto;
-  hyphenate-limit-chars: 6 3 3;
-  hyphenate-limit-lines: 2;
-  hyphenate-limit-last: always;
-  hyphenate-limit-zone: 8%;
 }
 strong {
   font-family: 'Hind', sans-serif;
