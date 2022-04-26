@@ -824,10 +824,9 @@ ul.producer {
   padding-block-start: 1rem;
   margin-inline: unset;
   margin-inline-start: 16px;
+  list-style-type: '\2713';
 }
-ul.producer li::marker,
-li::before {
-  content: '\2713';
+ul.producer li::marker {
   padding-inline-end: 0.5rem;
   color: var(--secondary-brand);
 }
