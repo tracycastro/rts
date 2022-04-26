@@ -654,14 +654,22 @@ a.social-nav__button:hover {
 
 .gb-wrapper {
   display: grid;
-  grid-auto-flow: row;
-  grid-auto-columns: 2fr 1fr;
+  grid-template-columns: 50% 50%;
   gap: 2rem;
   padding-block: 2rem;
-  justify-content: center;
+  align-items: start;
+  align-content: start;
+  justify-items: stretch;
+  justify-content: stretch;
   scroll-margin-top: 5em;
-  max-width: 1000px;
   margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
+  .gb-wrapper {
+    grid-template-columns: 100%;
+    justify-items: stretch;
+  }
 }
 .align-top {
   align-items: flex-start;
@@ -781,11 +789,11 @@ img.sponsor-logos-img {
     flex-direction: row;
     gap: 2rem;
   }
-  .gb-wrapper {
+  /* .gb-wrapper {
     grid-auto-flow: column;
     align-items: center;
     justify-items: center;
-  }
+  } */
 
   .rts-wrapper.rev {
     flex-direction: row-reverse;
